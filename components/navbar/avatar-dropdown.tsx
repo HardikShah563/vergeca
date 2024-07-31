@@ -37,14 +37,15 @@ export function AvatarDropdown() {
                 <DropdownMenuTrigger asChild>
                     <Avatar className="font-medium w-10 h-10 cursor-pointer">
                         <AvatarImage
-                            src="https://github.com/shadcn.png"
+                            src="https://github.com/shadcn.pngg"
                             alt="@shadcn"
                         />
-                        <AvatarFallback className="bg-primary text-background">
+                        <AvatarFallback className="text-foreground text-sm font-bold">
                             HS
                         </AvatarFallback>
                     </Avatar>
                 </DropdownMenuTrigger>
+
                 <DropdownMenuContent className="w-56 my-2" align="end">
                     <DropdownMenuLabel>
                         <div className="flex gap-2">

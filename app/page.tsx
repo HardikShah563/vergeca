@@ -1,4 +1,5 @@
 // importing components
+import { Main } from "@/components/sections/main";
 import { Features } from "@/components/sections/features";
 import { Pricing } from "@/components/sections/pricing";
 import { Faq } from "@/components/sections/faq";
@@ -10,9 +11,13 @@ export default function Home() {
         <>
             <div className="page">
                 <section>
+                    <Main />
+                </section>
+
+                <section>
                     <About />
                 </section>
-                
+
                 <section>
                     <Features />
                 </section>

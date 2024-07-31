@@ -37,8 +37,11 @@ export function Navbar() {
                     </div>
 
                     {/* <AvatarDropdown /> */}
-                    <Button variant={"secondary"} className="font-bold">
-                        Login
+
+                    <Button variant={"secondary"} className="font-bold" asChild>
+                        <a href="https://vergeca.in/web/login">
+                            Login
+                        </a>
                     </Button>
                 </div>
 

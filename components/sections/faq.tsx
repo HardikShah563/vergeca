@@ -37,16 +37,22 @@ export function Faq() {
                     Frequently Asked Questions
                 </h1>
 
-                <Accordion type="single" collapsible className="w-full">
-                    {questions.map((question) => (
-                        <AccordionItem value={question.question} className="my-2 px-4 border rounded-md">
-                            <AccordionTrigger>{question.question}</AccordionTrigger>
-                            <AccordionContent>
-                                {question.answer}
-                            </AccordionContent>
-                        </AccordionItem>
-                    ))}
-                </Accordion>
+                <div className="flex gap-5">
+                    <Accordion type="single" collapsible className="w-full">
+                        {questions.map((question) => (
+                            <AccordionItem value={question.question} className="my-2 px-4 border rounded-md">
+                                <AccordionTrigger>{question.question}</AccordionTrigger>
+                                <AccordionContent>
+                                    {question.answer}
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+
+                    <div className="hidden md:flex border">
+                        some image
+                    </div>
+                </div>
             </div>
         </>
     );
