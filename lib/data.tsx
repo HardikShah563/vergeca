@@ -1,4 +1,12 @@
-
+// importing icons
+import {
+    AlarmClockPlus,
+    Highlighter,
+    History,
+    Infinity,
+    LibraryBig,
+    MonitorSmartphone
+} from "lucide-react";
 
 export const links = [
     {
@@ -14,6 +22,50 @@ export const links = [
         link: "/contact-us",
         label: "Contact"
     }
+];
+
+export const features = [
+    {
+        "icon": Highlighter,
+        "heading": "Personalized Markers",
+        "paragraph": "Mark doubts, Last Minute Revision markers (LMR). Add personalized notes for each sum. Upload photos of your own solutions."
+    },
+    {
+        "icon": AlarmClockPlus,
+        "heading": "Save Time & Money",
+        "paragraph": "No Xerox & No wastage of time in searching & download from search sites.Save Subscription Charges by planning the Revision period."
+    },
+    {
+        "icon": History,
+        "heading": "Up to date Institute Materials",
+        "paragraph": "All Institute Materials are updated on a regular basis. Don't have to wait for Printed Reference Materials."
+    },
+    {
+        "icon": MonitorSmartphone,
+        "heading": "Web & Mobile App",
+        "paragraph": "Student can login either from Web or Mobile using same credentials."
+    },
+    {
+        "icon": LibraryBig,
+        "heading": "Multiple Book Revision",
+        "paragraph": "Student can select Multiple Institute Materials for revision and only those selected Materials Questions will be displayed."
+    },
+    {
+        "icon": Infinity,
+        "heading": "Unlimited View",
+        "paragraph": "View as many times as you want during the subscribed period."
+    },
+];
+
+export const pricing = [
+    {
+        "name": "",
+        "cost": 99,
+        "costDivision": "per subject",
+        "duration": 30,
+        "userCount": 1,
+        "features": "All Features",
+    },
 ];
 
 export const footerLinks = [

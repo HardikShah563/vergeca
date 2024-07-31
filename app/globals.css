@@ -69,18 +69,19 @@
   }
 
   .page {
-    @apply px-5 sm:px-10 md:px-20 mt-40;
+    @apply mt-40;
   }
 
   .section {
-    @apply my-20 py-20;
+    @apply px-[5vw] md:px-[10vw] my-20 py-20;
   }
 
   .heading {
-    @apply text-2xl md:text-4xl font-bold leading-none tracking-tight my-5;
+    /* @apply text-2xl md:text-4xl font-bold leading-none tracking-tight my-5; */
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight;
   }
 
   .sub-heading {
-    @apply text-2xl font-semibold leading-none tracking-tight my-5;
+    @apply text-2xl font-bold leading-none tracking-tight my-5;
   }
 }

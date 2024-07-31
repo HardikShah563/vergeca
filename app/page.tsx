@@ -1,19 +1,31 @@
-// importing from next
-import Image from "next/image";
-
 // importing components
+import { Features } from "@/components/sections/features";
+import { Pricing } from "@/components/sections/pricing";
 import { Faq } from "@/components/sections/faq";
 import { ContactUs } from "@/components/sections/contact-us";
+import { About } from "@/components/sections/about";
 
 export default function Home() {
     return (
         <>
             <div className="page">
-                <section className="section">
+                <section>
+                    <About />
+                </section>
+                
+                <section>
+                    <Features />
+                </section>
+
+                <section>
+                    <Pricing />
+                </section>
+
+                <section>
                     <Faq />
                 </section>
 
-                <section className="section">
+                <section>
                     <ContactUs />
                 </section>
             </div>

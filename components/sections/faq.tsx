@@ -32,20 +32,22 @@ export function Faq() {
 
     return (
         <>
-            <h1 className="heading text-center mb-10">
-                Frequently Asked Questions
-            </h1>
+            <div className="section">
+                <h1 className="heading mb-10">
+                    Frequently Asked Questions
+                </h1>
 
-            <Accordion type="single" collapsible className="w-full">
-                {questions.map((question) => (
-                    <AccordionItem value={question.question} className="my-2 px-4 border rounded-md">
-                        <AccordionTrigger>{question.question}</AccordionTrigger>
-                        <AccordionContent>
-                            {question.answer}
-                        </AccordionContent>
-                    </AccordionItem>
-                ))}
-            </Accordion>
+                <Accordion type="single" collapsible className="w-full">
+                    {questions.map((question) => (
+                        <AccordionItem value={question.question} className="my-2 px-4 border rounded-md">
+                            <AccordionTrigger>{question.question}</AccordionTrigger>
+                            <AccordionContent>
+                                {question.answer}
+                            </AccordionContent>
+                        </AccordionItem>
+                    ))}
+                </Accordion>
+            </div>
         </>
     );
 };
