@@ -13,9 +13,6 @@ export const links = [
     }, {
         link: "/contact-us",
         label: "Contact"
-    }, {
-        // link: "/blogs",
-        // label: "Blogs"
     }
 ];
 
@@ -34,7 +31,15 @@ export const footerLinks = [
             {
                 title: "Features",
                 link: "/features"
-            }
+            },
+            {
+                title: "FAQ",
+                link: "/faq"
+            },
+            {
+                title: "Articles",
+                link: "/articles"
+            },
         ]
     },
     {
@@ -54,16 +59,16 @@ export const footerLinks = [
         title: "Others",
         link: [
             {
-                title: "Testimonials",
-                link: "/testimonials"
+                title: "Payments",
+                link: "/payments"
             },
             {
-                title: "Contact",
-                link: "/contact"
+                title: "Terms",
+                link: "/terms"
             },
             {
-                title: "Feedback",
-                link: "/feedback"
+                title: "Data",
+                link: "/data"
             },
             {
                 title: "FAQ",

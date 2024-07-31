@@ -42,7 +42,9 @@ export function Navbar() {
                     </Button>
                 </div>
 
-                <NavSheet />
+                <div className="ml-5">
+                    <NavSheet />
+                </div>
             </nav>
         </>
     );
