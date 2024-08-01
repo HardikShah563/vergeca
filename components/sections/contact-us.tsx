@@ -1,23 +1,7 @@
-// importing from next
-import Image from "next/image";
-
 // importing shadcn components
 import { Button } from "@/components/ui/button";
-import {
-    Card,
-    CardContent
-} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-    Select,
-    SelectTrigger,
-    SelectValue,
-    SelectContent,
-    SelectGroup,
-    SelectLabel,
-    SelectItem
-} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
 export function ContactUs() {

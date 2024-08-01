@@ -26,12 +26,13 @@ export function Features() {
                     <p className="mt-4 text-muted-foreground max-w-3xl mx-auto text-center">
                         At Verge CA, we offer a comprehensive suite of fleet management services to help businesses of
                         all sizes optimize their transportation needs. From vehicle procurement and maintenance to fuel management
-                        and driver safety, we've got you covered.
+                        and driver safety, we&apos;ve got you covered.
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                         {features.map((feature) => (
                             <FeatureCard
+                                key={feature.heading}
                                 icon={feature.icon}
                                 heading={feature.heading}
                                 paragraph={feature.paragraph}

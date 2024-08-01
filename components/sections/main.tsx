@@ -1,6 +1,5 @@
 // importing from next
 import Image from "next/image";
-import Link from "next/link";
 
 // importing image
 import playstore from "@/public/images/playstore.svg";

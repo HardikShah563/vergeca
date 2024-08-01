@@ -40,7 +40,11 @@ export function Faq() {
                 <div className="flex gap-5">
                     <Accordion type="single" collapsible className="w-full">
                         {questions.map((question) => (
-                            <AccordionItem value={question.question} className="my-2 px-4 border rounded-md">
+                            <AccordionItem
+                                value={question.question}
+                                key={question.question}
+                                className="my-2 px-4 border rounded-md"
+                            >
                                 <AccordionTrigger>{question.question}</AccordionTrigger>
                                 <AccordionContent>
                                     {question.answer}
