@@ -33,7 +33,7 @@ export function NavSheet() {
                 <SheetContent side={"right"}>
                     <SheetHeader>
                         <SheetTitle className="sm:w-[50%] w-[60%]">
-                            <NavLogo color="blue" />
+                            <NavLogo />
                         </SheetTitle>
                     </SheetHeader>
                     
