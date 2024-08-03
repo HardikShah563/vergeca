@@ -32,7 +32,7 @@ export function Faq() {
 
     return (
         <>
-            <div className="section">
+            <div className="section bg-muted">
                 <h1 className="heading mb-10">
                     Frequently Asked Questions
                 </h1>

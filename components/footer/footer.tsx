@@ -135,9 +135,12 @@ export function Footer() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-2 lg:gap-10">
-                    <div>
-                        <h5 className="text-sm font-bold mb-4">Get Help 24/7</h5>
-                        <ul className="space-y-2">
+                    <div className="space-y-5">
+                        <div>
+                            One stop destination for complete CA Revision
+                        </div>
+
+                        <ul>
                             <li>
                                 <Mail className="inline-block w-5 h-5 mr-1" />
                                 <a target="_blank" href="mailto:info@toursnactivities.com">
@@ -146,20 +149,22 @@ export function Footer() {
                             </li>
                         </ul>
 
-                        <div className="mt-10">
-                            <h1 className="text-sm font-bold mb-2 ml-1">Available at</h1>
-                            
-                            <Image
-                                src={playstore}
-                                alt=""
-                                className="w-[160px]"
-                            />
+                        <div>
+                            <h1 className="text-sm font-bold ml-1">Available at</h1>
 
-                            <Image
-                                src={webapp}
-                                alt=""
-                                className="w-[160px]"
-                            />
+                            <div className="flex gap-2">
+                                <Image
+                                    src={playstore}
+                                    alt=""
+                                    className="w-[140px]"
+                                />
+
+                                <Image
+                                    src={webapp}
+                                    alt=""
+                                    className="w-[140px]"
+                                />
+                            </div>
                         </div>
                     </div>
 

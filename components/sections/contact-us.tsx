@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 export function ContactUs() {
     return (
         <>
-            <section className="section mb-0 bg-muted">
+            <section className="section my-0 pt-0">
                 <div className="my-5">
                     <h1 className="heading text-center my-10">
                         Contact Us

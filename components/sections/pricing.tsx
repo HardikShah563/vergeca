@@ -18,7 +18,7 @@ interface PriceCardInterface {
     features: string[]
 }
 
-function PricingCard(props: PriceCardInterface) {
+export function PricingCard(props: PriceCardInterface) {
     return (
         <>
             <Card className="group flex flex-col items-center justify-between rounded-lg p-6 text-center shadow-sm transition-all w-[80vw] sm:w-60 border border-muted hover:border-muted-foreground hover:bg-muted">
@@ -29,7 +29,7 @@ function PricingCard(props: PriceCardInterface) {
                 </div>
                 <ul className="my-6 space-y-2 text-left">
                     {props.features.map((feature) => (
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-center gap-2" key={feature}>
                             <Check className="h-4 w-4 text-green-500" />
                             <span>{feature}</span>
                         </li>
@@ -44,14 +44,14 @@ function PricingCard(props: PriceCardInterface) {
 export function Pricing() {
     return (
         <>
-            <section id="pricing" className="section">
+            <section id={"pricing"} className={"section"}>
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
                             <h1 className="heading">
                                 Pricing
                             </h1>
-                            <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                 Choose the plan that fits your needs.
                             </p>
                         </div>

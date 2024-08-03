@@ -6,6 +6,7 @@ import { Pricing } from "@/components/sections/pricing";
 import { Faq } from "@/components/sections/faq";
 import { ContactUs } from "@/components/sections/contact-us";
 import { AOS_Component } from "@/components/aos/aos";
+import { Vision } from "@/components/sections/vision";
 
 export default function Home() {
     const aosDelay = 200;
@@ -32,6 +33,15 @@ export default function Home() {
                     data-aos-duration={aosDuration}
                 >
                     <About />
+                </section>
+
+                <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
+                    <Vision />
                 </section>
 
                 <section
