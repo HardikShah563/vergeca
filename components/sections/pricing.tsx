@@ -1,12 +1,45 @@
 // importing shadcn components
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { pricing } from "@/lib/data";
 
 // importing icons
 import {
     Check,
     X
 } from "lucide-react";
+
+interface PriceCardInterface {
+    name: string,
+    cost: number,
+    costDivision: string,
+    duration: number,
+    userCount: number,
+    features: string[]
+}
+
+function PricingCard(props: PriceCardInterface) {
+    return (
+        <>
+            <Card className="group flex flex-col items-center justify-between rounded-lg p-6 text-center shadow-sm transition-all w-[80vw] sm:w-60 border border-muted hover:border-muted-foreground hover:bg-muted">
+                <div className="space-y-2">
+                    <h3 className="text-2xl font-bold">{props.name}</h3>
+                    <p className="text-4xl font-bold">₹{props.cost}</p>
+                    <p className="text-muted-foreground">{props.costDivision}</p>
+                </div>
+                <ul className="my-6 space-y-2 text-left">
+                    {props.features.map((feature) => (
+                        <li className="flex items-center gap-2">
+                            <Check className="h-4 w-4 text-green-500" />
+                            <span>{feature}</span>
+                        </li>
+                    ))}
+                </ul>
+                <Button variant={"default"} className="w-full bg-accent group-hover:bg-foreground">Get Started</Button>
+            </Card>
+        </>
+    );
+}
 
 export function Pricing() {
     return (
@@ -22,75 +55,19 @@ export function Pricing() {
                                 Choose the plan that fits your needs.
                             </p>
                         </div>
-                        <div className="grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-                            <Card className="flex flex-col items-center justify-between rounded-lg border border-gray-200 p-6 text-center shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:hover:border-gray-700">
-                                <div className="space-y-2">
-                                    <h3 className="text-2xl font-bold">Starter</h3>
-                                    <p className="text-4xl font-bold">$9</p>
-                                    <p className="text-gray-500 dark:text-gray-400">per month</p>
-                                </div>
-                                <ul className="my-6 space-y-2 text-left">
-                                    <li className="flex items-center gap-2">
-                                        <Check className="h-4 w-4 text-green-500" />
-                                        <span>100 messages per month</span>
-                                    </li>
-                                    <li className="flex items-center gap-2">
-                                        <Check className="h-4 w-4 text-green-500" />
-                                        <span>Basic analytics</span>
-                                    </li>
-                                    <li className="flex items-center gap-2">
-                                        <X className="h-4 w-4 text-red-500" />
-                                        <span>No scheduling</span>
-                                    </li>
-                                </ul>
-                                <Button className="w-full">Get Started</Button>
-                            </Card>
 
-                            <Card className="flex flex-col items-center justify-between rounded-lg border-2 border-[#25D366] bg-[#25D366]/10 p-6 text-center shadow-sm transition-all hover:border-[#25D366]/80 dark:border-[#25D366] dark:bg-[#25D366]/20 dark:hover:border-[#25D366]/80">
-                                <div className="space-y-2">
-                                    <h3 className="text-2xl font-bold">Pro</h3>
-                                    <p className="text-4xl font-bold">$19</p>
-                                    <p className="text-gray-500 dark:text-gray-400">per month</p>
-                                </div>
-                                <ul className="my-6 space-y-2 text-left">
-                                    <li className="flex items-center gap-2">
-                                        <Check className="h-4 w-4 text-green-500" />
-                                        <span>1,000 messages per month</span>
-                                    </li>
-                                    <li className="flex items-center gap-2">
-                                        <Check className="h-4 w-4 text-green-500" />
-                                        <span>Advanced analytics</span>
-                                    </li>
-                                    <li className="flex items-center gap-2">
-                                        <Check className="h-4 w-4 text-green-500" />
-                                        <span>Scheduling</span>
-                                    </li>
-                                </ul>
-                                <Button className="w-full">Get Started</Button>
-                            </Card>
-
-                            <Card className="flex flex-col items-center justify-between rounded-lg border border-gray-200 p-6 text-center shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:hover:border-gray-700">
-                                <div className="space-y-2">
-                                    <h3 className="text-2xl font-bold">Enterprise</h3>
-                                    <p className="text-4xl font-bold">$49</p>
-                                    <p className="text-gray-500 dark:text-gray-400">per month</p>
-                                </div>
-                                <ul className="my-6 space-y-2 text-left">
-                                    <li className="flex items-center gap-2">
-                                        <Check className="h-4 w-4 text-green-500" />
-                                        <span>Unlimited messages</span>
-                                    </li>
-                                    <li className="flex items-center gap-2">
-                                        <Check className="h-4 w-4 text-green-500" />
-                                        <span>Comprehensive analytics</span>
-                                    </li>
-                                    <li className="flex items-center gap-2">
-                                        <Check className="h-4 w-4 text-green-500" />
-                                        <span>Dedicated support</span>
-                                    </li>
-                                </ul>
-                                <Button className="w-full">Get Started</Button>
-                            </Card>
+                        <div className="w-full max-w-3xl flex flex-wrap justify-center gap-5">
+                            {pricing.map((pricingCard) => (
+                                <PricingCard
+                                    key={pricingCard.name}
+                                    name={pricingCard.name}
+                                    cost={pricingCard.cost}
+                                    costDivision={pricingCard.costDivision}
+                                    duration={pricingCard.duration}
+                                    userCount={pricingCard.userCount}
+                                    features={pricingCard.features}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>

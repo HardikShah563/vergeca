@@ -59,12 +59,43 @@ export const features = [
 
 export const pricing = [
     {
-        "name": "",
+        "name": "Free Plan",
+        "cost": 0,
+        "costDivision": "per subject",
+        "duration": 30,
+        "userCount": 1,
+        "features": ["Unlimited Login", "All Features"],
+    }, {
+        "name": "Monthly Plan",
         "cost": 99,
         "costDivision": "per subject",
         "duration": 30,
         "userCount": 1,
-        "features": "All Features",
+        "features": ["Unlimited Login", "All Features"],
+    },
+    {
+        "name": "Quaterly Plan",
+        "cost": 199,
+        "costDivision": "per subject",
+        "duration": 90,
+        "userCount": 1,
+        "features": ["Unlimited Login", "All Features"],
+    },
+    {
+        "name": "Bianually Plan",
+        "cost": 299,
+        "costDivision": "per subject",
+        "duration": 180,
+        "userCount": 1,
+        "features": ["Unlimited Login", "All Features"],
+    },
+    {
+        "name": "Annual Plan",
+        "cost": 499,
+        "costDivision": "per subject",
+        "duration": 360,
+        "userCount": 1,
+        "features": ["Unlimited Login", "All Features"],
     },
 ];
 
