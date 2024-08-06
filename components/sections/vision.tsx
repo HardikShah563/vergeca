@@ -1,3 +1,6 @@
+// importing from next
+import Image from "next/image";
+
 // importing shadcn components
 import { Button } from "@/components/ui/button";
 
@@ -5,16 +8,20 @@ import { Button } from "@/components/ui/button";
 import { vision } from "@/lib/data";
 
 interface VisionCardInterface {
-    icon: any, 
+    image: any, 
     heading: string, 
     paragraph: string
 }
 
-export function VisionCard(props: { icon: any, heading: string, paragraph: string }) {
+export function VisionCard(props: VisionCardInterface) {
     return (
         <div>
-            {/* <props.icon className="w-8 h-8 text-primary" /> */}
-            <h3 className="mt-4 text-lg font-medium">
+            <Image
+                src={props.image}
+                alt="vision img"
+                className="w-[50%]"
+            />
+            <h3 className="mt-4 text-2xl font-semibold my-5">
                 {props.heading}
             </h3>
             <p className="mt-2 text-muted-foreground">
@@ -28,7 +35,7 @@ export function Vision() {
     return (
         <>
             <section id={"vision"} className={"section"}>
-                <div className="space-y-2">
+                <div className="space-y-2 mb-20">
                     <p className="max-w-[900px] text-muted-foreground font-semibold md:text-md">
                         WHY CHOOSE US
                     </p>
@@ -41,7 +48,7 @@ export function Vision() {
                     {vision.map((vis) => (
                         <VisionCard
                             key={vis.heading}
-                            icon={vis.icon}
+                            image={vis.image}
                             heading={vis.heading}
                             paragraph={vis.paragraph}
                         />

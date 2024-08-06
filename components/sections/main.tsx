@@ -45,7 +45,7 @@ export function Main() {
                                         Verge CA
                                     </h1>
                                     <h1 className="sub-heading text-center">
-                                        One stop destination for complete CA Revision
+                                        Revision App for CA Inter & CA Final Students
                                     </h1>
 
                                     <div className="flex justify-center gap-2 sm:gap-5">

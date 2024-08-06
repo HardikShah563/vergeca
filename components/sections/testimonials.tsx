@@ -1,9 +1,15 @@
+// importing from next
+import Image from "next/image";
+
 // importing shadcn components
 import {
     Card,
     CardContent,
     CardFooter
 } from "@/components/ui/card";
+
+// importing images
+import testimonialImage from "@/public/images/testimonial.svg";
 
 // importing data
 import { testimonials } from "@/lib/data";
@@ -12,14 +18,16 @@ export function InfiniteTestimonialScroll() {
     return (
         <>
             <div>
-                <div className="relative w-full flex items-center p-10 sm:p-20 md:p-40 overflow-x-hidden">
+                <div className="relative w-full flex items-center p-36 sm:p-20 md:p-40 overflow-x-hidden">
                     <div className="flex absolute left-0 animate-marquee-infinite">
                         <div className="flex gap-5">
                             {testimonials.map((testimonial) => (
-                                <TestimonialCard />
+                                <TestimonialCard key={testimonial.text} />
                             ))}
+                        </div>
+                        <div className="gap-5 hidden md:flex ml-5">
                             {testimonials.map((testimonial) => (
-                                <TestimonialCard />
+                                <TestimonialCard key={testimonial.text} />
                             ))}
                         </div>
                     </div>
@@ -34,7 +42,7 @@ export function TestimonialCard() {
         <>
             <Card className="min-w-[300px]">
                 <CardContent className="p-6 lg:p-8">
-                    <p className="text-sm font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">Feedback</p>
+                    <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">Feedback</p>
                     <p className="mt-1.5 text-lg font-semibold lg:text-base xl:text-xl">
                         &ldquo;The platform allowed our team to focus on shipping features instead of managing
                         infrastructure.&ldquo;
@@ -52,7 +60,7 @@ export function TestimonialCard() {
                         />
                         <div className="text-sm font-semibold">
                             Jane Cooper
-                            <div className="text-xs font-normal text-gray-500 dark:text-gray-400">CEO, Example Inc</div>
+                            <div className="text-xs font-normal text-muted-foreground">CEO, Example Inc</div>
                         </div>
                     </div>
                 </CardFooter>
@@ -64,14 +72,22 @@ export function TestimonialCard() {
 export function Testimonials() {
     return (
         <section className={"py-32"}>
-            <div className="px-[5vw] md:px-[10vw] pb-10 container grid items-center gap-4 lg:grid-cols-2 xl:gap-10">
-                <div className="space-y-4">
-                    <h2 className="heading">
+            <div className="px-[5vw] md:px-[10vw] pb-10 container flex flex-col-reverse md:flex-row justify-between items-center gap-4 lg:grid-cols-2 xl:gap-10">
+                <div className="space-y-4 mx-auto md:mx-0 md:w-[70%] lg:w-[50%]">
+                    <h2 className="heading text-center md:text-left">
                         Loved and trusted by students.
                     </h2>
-                    <p className="paragraph text-xl text-muted-foreground md:w-[90%]">
+                    <p className="paragraph text-xl text-muted-foreground md:w-[90%] text-center md:text-left">
                         See what students are saying about their experience with our platform.
                     </p>
+                </div>
+
+                <div className="md:ml-auto">
+                    <Image
+                        src={testimonialImage}
+                        alt="testimonial.svg"
+                        className="w-[180px]"
+                    />
                 </div>
             </div>
 

@@ -137,14 +137,14 @@ export function Footer() {
                 <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-10 md:gap-2 lg:gap-10">
                     <div className="space-y-5 md:col-span-2">
                         <div>
-                            One stop destination for complete CA Revision
+                            Revision App for CA Inter & CA Final Students
                         </div>
 
                         <ul>
                             <li>
                                 <Mail className="inline-block w-5 h-5 mr-1" />
-                                <a target="_blank" href="mailto:info@toursnactivities.com">
-                                    info@toursnactivities.com
+                                <a target="_blank" href="mailto:vergecainfo@gmail.com">
+                                    vergecainfo@gmail.com
                                 </a>
                             </li>
                         </ul>

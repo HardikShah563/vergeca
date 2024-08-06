@@ -23,7 +23,7 @@ export function ContactUs() {
                         </div>
                         <div className="space-y-1">
                             <Label htmlFor="last-name">Phone Number</Label>
-                            <Input id="last-name" placeholder="Enter your last name" />
+                            <Input id="last-name" placeholder="Enter your mobile number" />
                         </div>
                     </div>
                     <div className="space-y-1">

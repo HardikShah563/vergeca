@@ -24,19 +24,23 @@ export const links = [
     }
 ];
 
+import vision1 from "@/public/images/vision1.svg";
+import vision2 from "@/public/images/vision2.svg";
+import vision3 from "@/public/images/vision3.svg";
+
 export const vision = [
     {
-        "icon": "",
+        "image": vision1,
         "heading": "Comprehensive Revision App",
         "paragraph": "All Materials of Institute in one place. Compilation of New Syllabus & Old Syllabus. Don't have to rely on any publication or printed reference materials."
     },
     {
-        "icon": "",
+        "image": vision2,
         "heading": "Provide question filters with references",
         "paragraph": "Chapters / Topics are filtered further by Categories like Imp/LMR/Similar. Exact Sum Reference of Institute Materials (Book Page No. - Q No. / Year or Multiple Years - Q No.)."
     },
     {
-        "icon": "",
+        "image": vision3,
         "heading": "Smart Revision App & time management",
         "paragraph": "Do Revision from anywhere in a synchronized & planned way. Do Analysis of Question appeared / repetition in Institute Materials. Revision by Selection of Multiple Books / Materials"
     },

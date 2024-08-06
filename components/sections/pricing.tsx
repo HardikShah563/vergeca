@@ -21,7 +21,7 @@ interface PriceCardInterface {
 export function PricingCard(props: PriceCardInterface) {
     return (
         <>
-            <Card className="group flex flex-col items-center justify-between rounded-lg p-6 text-center shadow-sm transition-all w-[80vw] sm:w-60 border border-muted hover:border-muted-foreground hover:bg-muted">
+            <Card className="group bg-muted/60 flex flex-col items-center justify-between rounded-lg p-6 text-center shadow-sm transition-all w-[80vw] sm:w-60 border border-muted hover:border-muted-foreground hover:bg-muted">
                 <div className="space-y-2">
                     <h3 className="text-2xl font-bold">{props.name}</h3>
                     <p className="text-4xl font-bold">₹{props.cost}</p>
@@ -44,7 +44,7 @@ export function PricingCard(props: PriceCardInterface) {
 export function Pricing() {
     return (
         <>
-            <section id={"pricing"} className={"section"}>
+            <section id={"pricing"} className={"px-[5vw] md:px-[10vw] pt-10 pb-20 md:pb-28 lg:pb-32"}>
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
