@@ -3,11 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { ArrowUpRight } from "lucide-react";
 
 export function ContactUs() {
     return (
         <>
-            <section className="section my-0 pt-0">
+            <section className="section">
                 <div className="my-5">
                     <h1 className="heading text-center my-10">
                         Contact Us
@@ -37,8 +38,11 @@ export function ContactUs() {
                         <Label htmlFor="message">Message</Label>
                         <Textarea id="message" placeholder="Enter your message" className="min-h-[100px]" />
                     </div>
-                    <Button type="submit" className="bg-gray-800 text-white">
-                        Send message
+                    <Button
+                        variant={"default"}
+                        className="w-full bg-accent group-hover:bg-foreground gap-1"
+                    >
+                        Send message <ArrowUpRight className="w-4 h-4" />
                     </Button>
 
                     <div className="md:w-[500px]">

@@ -75,6 +75,201 @@ export const features = [
     },
 ];
 
+export const testimonials = [
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+    {
+        "text": "",
+        "avatar": "",
+        "name": "",
+        "designation": ""
+    },
+];
+
 export const pricing = [
     {
         "name": "Free Plan",
@@ -109,11 +304,34 @@ export const pricing = [
     },
     {
         "name": "Annual Plan",
-        "cost": 499,
+        "cost": 399,
         "costDivision": "per subject",
         "duration": 360,
         "userCount": 1,
         "features": ["Unlimited Login", "All Features"],
+    },
+];
+
+export const faq = [
+    {
+        "question": "What is the Verge CA App, and who is it designed for?",
+        "answer": "The Verge CA App is a revision application designed for CA Final and CA Inter students. It offers in-depth subject knowledge, technical guidance, and a comprehensive compilation of Institute materials."
+    },
+    {
+        "question": "What subjects does the Verge CA App cover for CA Inter and CA Final students?",
+        "answer": "For CA Inter, the app covers Advanced Accounting, Costing, Audit, Financial Management, and Strategic Management. For CA Final, it covers Financial Reporting, Advanced Financial Management, and Auditing."
+    },
+    {
+        "question": "What unique features does the Verge CA App offer to students?",
+        "answer": "The app offers filters to view Institute Materials questions by topic and importance, bookmarks, personalized doubt and revision tracking, image uploads for personal notes, and regular updates with the latest exam papers, RTPs, and MTPs."
+    },
+    {
+        "question": "How does the Verge CA App assist students in Tier II and Tier III cities?",
+        "answer": "The app serves the needs of students in Tier II and Tier III cities by providing comprehensive revision materials and resources that might otherwise be unavailable to them locally."
+    },
+    {
+        "question": "Can faculty members use the Verge CA App to assist students?",
+        "answer": "Yes, faculty members can use the Verge CA App to help students in their preparation and revision process."
     },
 ];
 

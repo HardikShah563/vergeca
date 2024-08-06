@@ -6,30 +6,10 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export function Faq() {
-    const questions = [
-        {
-            "question": "q1",
-            "answer": "a1"
-        },
-        {
-            "question": "q2",
-            "answer": "a2"
-        },
-        {
-            "question": "q3",
-            "answer": "a3"
-        },
-        {
-            "question": "q4",
-            "answer": "a4"
-        },
-        {
-            "question": "q5",
-            "answer": "a5"
-        },
-    ];
+// importing data
+import { faq } from "@/lib/data";
 
+export function Faq() {
     return (
         <>
             <div className="section bg-muted">
@@ -39,7 +19,7 @@ export function Faq() {
 
                 <div className="flex gap-5">
                     <Accordion type="single" collapsible className="w-full">
-                        {questions.map((question) => (
+                        {faq.map((question) => (
                             <AccordionItem
                                 value={question.question}
                                 key={question.question}

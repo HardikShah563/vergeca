@@ -134,8 +134,8 @@ export function Footer() {
                     />
                 </div>
 
-                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-2 lg:gap-10">
-                    <div className="space-y-5">
+                <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-10 md:gap-2 lg:gap-10">
+                    <div className="space-y-5 md:col-span-2">
                         <div>
                             One stop destination for complete CA Revision
                         </div>

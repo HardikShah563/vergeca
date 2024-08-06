@@ -3,6 +3,7 @@ import Link from "next/link";
 
 // importing shadcn compoentns
 import { Button } from "@/components/ui/button";
+import { ArrowUpRight } from "lucide-react";
 
 export function About() {
     return (
@@ -15,13 +16,12 @@ export function About() {
                         </h2>
 
                         <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">
-                            Verge CA is an innovative platform dedicated to assisting aspiring Chartered Accountants. Founded in November 2020, the platform aims to provide high-quality educational resources, focusing on comprehensive and efficient revision for CA Final and CA Inter students.
+                            Verge CA is an innovative platform dedicated to 
+                            &nbsp;<span className="font-bold text-foreground">assisting aspiring Chartered Accountants</span>. 
+                            Founded in November 2020, the platform aims to provide high-quality educational resources, focusing on comprehensive and efficient revision for 
+                            &nbsp;<span className="font-bold text-foreground">CA Final and CA Inter students</span>. 
                         </p>
-
-                        <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">
-                            It is especially designed to serve students in Tier II and Tier III cities, offering a complete set of institute materials and practice questions in one place. Verge CA emphasizes in-depth subject knowledge and technical guidance, ensuring students have access to the best educational quality available.
-                        </p>
-
+                        
                         <h2 className="sub-heading mt-10">
                             About The Founder
                         </h2>
@@ -38,13 +38,12 @@ export function About() {
                             Neel has played a pivotal role in developing and curating online content and practice materials to aid CA aspirants in their journey.
                         </p>
 
-                        <Button asChild>
+                        <Button className="bg-accent" asChild>
                             <Link
-                                className="mt-8 inline-flex h-10 items-center justify-center rounded-md  px-8 text-sm font-medium"
+                                className="mt-8 inline-flex gap-1 h-10 items-center justify-center rounded-md px-4 text-sm font-medium"
                                 href={"/about-app"}
-                                prefetch={false}
                             >
-                                Learn more about the App
+                                Learn more about the App <ArrowUpRight className="w-4 h-4" />
                             </Link>
                         </Button>
                     </div>
@@ -60,10 +59,13 @@ export function About() {
                         <h3 className="mt-4 text-xl font-bold text-gray-900 dark:text-gray-100">
                             CA Neel Paresh Doshi
                         </h3>
-                        <p className="mt-2 text-muted-foreground">
+                        <p className="mt-2 text-muted-foreground font-medium">
                             Founder
                         </p>
-                        <p className="mt-2 text-muted-foreground">
+                        <p className="mt-2 text-muted-foreground font-medium">
+                            Chartered Accountant
+                        </p>
+                        <p className="mt-2 text-muted-foreground font-medium">
                             CFA & CIPM (USA)
                         </p>
                     </div>

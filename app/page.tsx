@@ -7,6 +7,7 @@ import { Faq } from "@/components/sections/faq";
 import { ContactUs } from "@/components/sections/contact-us";
 import { AOS_Component } from "@/components/aos/aos";
 import { Vision } from "@/components/sections/vision";
+import { Testimonials } from "@/components/sections/testimonials";
 
 export default function Home() {
     const aosDelay = 200;
@@ -14,7 +15,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="page">
+            <div className="page max-w-[1640px] mx-auto">
                 <AOS_Component />
 
                 <section
@@ -51,6 +52,15 @@ export default function Home() {
                     data-aos-duration={aosDuration}
                 >
                     <Features />
+                </section>
+
+                <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
+                    <Testimonials />
                 </section>
 
                 <section
