@@ -1,9 +1,11 @@
 // importing from next
-import Link from "next/link";
+import Image from "next/image";
 
-// importing shadcn compoentns
-import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
+// importing compoentns
+import { ArrowButton } from "./arrow-button";
+
+// importing image
+import founder from "@/public/images/founder.svg";
 
 export function About() {
     return (
@@ -16,18 +18,18 @@ export function About() {
                         </h2>
 
                         <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">
-                            Verge CA is an innovative platform dedicated to 
-                            &nbsp;<span className="font-bold text-foreground">assisting aspiring Chartered Accountants</span>. 
-                            Founded in November 2020, the platform aims to provide high-quality educational resources, focusing on comprehensive and efficient revision for 
-                            &nbsp;<span className="font-bold text-foreground">CA Final and CA Inter students</span>. 
+                            Verge CA is an innovative platform dedicated to
+                            &nbsp;<span className="font-bold text-foreground">assisting aspiring Chartered Accountants</span>.
+                            Founded in November 2020, the platform aims to provide high-quality educational resources, focusing on comprehensive and efficient revision for
+                            &nbsp;<span className="font-bold text-foreground">CA Final and CA Inter students</span>.
                         </p>
-                        
+
                         <h2 className="sub-heading mt-10">
                             About The Founder
                         </h2>
 
                         <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">
-                            <span className="font-bold text-foreground">Neel Paresh Doshi</span>, the co-founder of Verge CA, is a 
+                            <span className="font-bold text-foreground">Neel Paresh Doshi</span>, the co-founder of Verge CA, is a
                             &nbsp;<span className="font-bold text-foreground">Chartered Accountant</span>&nbsp;
                             who achieved success in the CA Final exams on his first attempt in November 2023.
                             He has also&nbsp;
@@ -38,14 +40,12 @@ export function About() {
                             Neel has played a pivotal role in developing and curating online content and practice materials to aid CA aspirants in their journey.
                         </p>
 
-                        <Button className="bg-accent" asChild>
-                            <Link
-                                className="mt-8 inline-flex gap-1 h-10 items-center justify-center rounded-md px-4 text-sm font-medium"
-                                href={"/about-app"}
-                            >
-                                Learn more about the App <ArrowUpRight className="w-4 h-4" />
-                            </Link>
-                        </Button>
+                        <div className="mt-10">
+                            <ArrowButton
+                                text={"Learn more about the app"}
+                                link={"/about"}
+                            />
+                        </div>
                     </div>
 
                     <div className="flex flex-col items-center">
@@ -56,6 +56,13 @@ export function About() {
                             src="/placeholder.svg"
                             width="300"
                         />
+                        {/* 
+                        <Image
+                            src={founder}
+                            alt="Neel Paresh Doshi Picture"
+                            className="-rotate-90 w-[300px]"
+                        />
+                         */}
                         <h3 className="mt-4 text-xl font-bold text-gray-900 dark:text-gray-100">
                             CA Neel Paresh Doshi
                         </h3>

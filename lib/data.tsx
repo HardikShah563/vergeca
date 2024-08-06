@@ -16,6 +16,9 @@ export const links = [
         link: "/features",
         label: "Features"
     }, {
+        link: "/faq",
+        label: "FAQ"
+    }, {
         link: "/demo",
         label: "Demo"
     }, {
@@ -299,7 +302,7 @@ export const pricing = [
         "features": ["Unlimited Login", "All Features"],
     },
     {
-        "name": "Bianually Plan",
+        "name": "Bianual Plan",
         "cost": 299,
         "costDivision": "per subject",
         "duration": 180,

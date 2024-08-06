@@ -1,11 +1,10 @@
-// importing components
-import { ContactUs } from "@/components/sections/contact-us";
+import { Faq } from "@/components/sections/faq";
 
 export default function page() {
     return (
         <>
             <div className="pt-10">
-                <ContactUs />
+                <Faq />
             </div>
         </>
     );

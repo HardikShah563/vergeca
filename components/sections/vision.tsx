@@ -1,15 +1,12 @@
 // importing from next
 import Image from "next/image";
 
-// importing shadcn components
-import { Button } from "@/components/ui/button";
-
 // importing data
 import { vision } from "@/lib/data";
 
 interface VisionCardInterface {
-    image: any, 
-    heading: string, 
+    image: any,
+    heading: string,
     paragraph: string
 }
 
@@ -54,8 +51,6 @@ export function Vision() {
                         />
                     ))}
                 </div>
-
-                <Button>Learn more about app</Button>
             </section>
         </>
     );
