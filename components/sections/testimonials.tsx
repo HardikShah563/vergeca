@@ -3,6 +3,10 @@ import Image from "next/image";
 
 // importing shadcn components
 import {
+    Avatar,
+    AvatarFallback,
+} from "@/components/ui/avatar";
+import {
     Card,
     CardContent,
     CardFooter
@@ -13,21 +17,41 @@ import testimonialImage from "@/public/images/testimonial.svg";
 
 // importing data
 import { testimonials } from "@/lib/data";
+import { Star } from "lucide-react";
+
+interface TestimonialCardInterface {
+    text: string,
+    avatar: string,
+    name: string,
+    designation: string
+}
 
 export function InfiniteTestimonialScroll() {
     return (
         <>
             <div>
-                <div className="relative w-full flex items-center p-36 sm:p-20 md:p-40 overflow-x-hidden">
+                <div className="relative w-full flex items-center p-36 sm:p-20 md:p-48 overflow-x-hidden">
                     <div className="flex absolute left-0 animate-marquee-infinite">
                         <div className="flex gap-5">
                             {testimonials.map((testimonial) => (
-                                <TestimonialCard key={testimonial.text} />
+                                <TestimonialCard
+                                    key={testimonial.text}
+                                    text={testimonial.text}
+                                    avatar={testimonial.avatar}
+                                    name={testimonial.name}
+                                    designation={testimonial.designation}
+                                />
                             ))}
                         </div>
                         <div className="gap-5 hidden md:flex ml-5">
                             {testimonials.map((testimonial) => (
-                                <TestimonialCard key={testimonial.text} />
+                                <TestimonialCard
+                                    key={testimonial.text}
+                                    text={testimonial.text}
+                                    avatar={testimonial.avatar}
+                                    name={testimonial.name}
+                                    designation={testimonial.designation}
+                                />
                             ))}
                         </div>
                     </div>
@@ -37,30 +61,24 @@ export function InfiniteTestimonialScroll() {
     );
 }
 
-export function TestimonialCard() {
+export function TestimonialCard({ text, avatar, name, designation }: TestimonialCardInterface) {
     return (
         <>
-            <Card className="min-w-[300px]">
+            <Card className="min-w-[500px]">
                 <CardContent className="p-6 lg:p-8">
                     <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">Feedback</p>
-                    <p className="mt-1.5 text-lg font-semibold lg:text-base xl:text-xl">
-                        &ldquo;The platform allowed our team to focus on shipping features instead of managing
-                        infrastructure.&ldquo;
+                    <p className="mt-1.5 font-semibold text-sm">
+                        {text}
                     </p>
                 </CardContent>
                 <CardFooter>
                     <div className="flex items-center space-x-3">
-                        <img
-                            src="/placeholder.svg"
-                            width="40"
-                            height="40"
-                            alt="Avatar"
-                            className="rounded-full bg-muted"
-                            style={{ aspectRatio: "40/40", objectFit: "cover" }}
-                        />
+                        <Avatar>
+                            <AvatarFallback>{avatar}</AvatarFallback>
+                        </Avatar>
                         <div className="text-sm font-semibold">
-                            Jane Cooper
-                            <div className="text-xs font-normal text-muted-foreground">CEO, Example Inc</div>
+                            {name}
+                            <div className="text-xs font-normal text-muted-foreground">{designation}</div>
                         </div>
                     </div>
                 </CardFooter>
@@ -74,9 +92,15 @@ export function Testimonials() {
         <section className={"py-32"}>
             <div className="px-[5vw] md:px-[10vw] pb-10 container flex flex-col-reverse md:flex-row justify-between items-center gap-4 lg:grid-cols-2 xl:gap-10">
                 <div className="space-y-4 mx-auto md:mx-0 md:w-[70%] lg:w-[50%]">
-                    <h2 className="heading text-center md:text-left">
+                    <h1 className="heading text-center md:text-left">
                         Loved and trusted by students.
+                    </h1>
+                    <h2 className="sub-heading">
+                        (Ratings 4.8 by more than 219 reviews)
                     </h2>
+                    {/* <span className="flex gap-1 heading text-center md:text-left">
+                        (4.8/5 <Star className="w-12 h-12 fill-yellow-300" />)
+                    </span> */}
                     <p className="paragraph text-xl text-muted-foreground md:w-[90%] text-center md:text-left">
                         See what students are saying about their experience with our platform.
                     </p>

@@ -63,7 +63,7 @@ export function About() {
                             className="-rotate-90 w-[300px]"
                         />
                          */}
-                        <h3 className="mt-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+                        <h3 className="mt-4 text-xl font-bold text-foreground">
                             CA Neel Paresh Doshi
                         </h3>
                         <p className="mt-2 text-muted-foreground font-medium">
