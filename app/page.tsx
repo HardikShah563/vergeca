@@ -91,6 +91,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    className="bg-muted"
                 >
                     <Faq />
                 </section>

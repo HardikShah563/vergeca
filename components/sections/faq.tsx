@@ -35,7 +35,7 @@ export function Faq() {
                             <AccordionItem
                                 value={question.question}
                                 key={question.question}
-                                className="my-2 px-4 border rounded-md"
+                                className="my-2 px-4 border border-foreground rounded-md"
                             >
                                 <AccordionTrigger className="text-left mr-2">{question.question}</AccordionTrigger>
                                 <AccordionContent>

@@ -13,9 +13,6 @@ export const links = [
         link: "/about",
         label: "About"
     }, {
-        link: "/features",
-        label: "Features"
-    }, {
         link: "/faq",
         label: "FAQ"
     }, {
