@@ -1,7 +1,7 @@
 export function Analysis() {
     return (
         <>
-            <div className="section my-0 py-10 md:py-20 lg:py-36 bg-muted">
+            <div className="section my-0 py-10 md:py-20 lg:py-36">
                 <div className="pb-10">
                     <h1 className="heading text-center md:text-left">
                         Exam Analysis by CA Abhishek Bansal

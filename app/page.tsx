@@ -1,13 +1,15 @@
 // importing components
 import { Main } from "@/components/sections/main";
+import { FixedIcons } from "@/components/sections/fixed-icons";
 import { About } from "@/components/sections/about";
+import { Daughters } from "@/components/sections/daughters";
+import { Vision } from "@/components/sections/vision";
 import { Features } from "@/components/sections/features";
 import { Pricing } from "@/components/sections/pricing";
 import { Analysis } from "@/components/sections/analysis";
 import { Faq } from "@/components/sections/faq";
 import { ContactUs } from "@/components/sections/contact-us";
 import { AOS_Component } from "@/components/aos/aos";
-import { Vision } from "@/components/sections/vision";
 import { Testimonials } from "@/components/sections/testimonials";
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
         <>
             <div className="page max-w-[1640px] mx-auto">
                 <AOS_Component />
+
+                <FixedIcons />
 
                 <section
                     data-aos="fade-up"
@@ -89,6 +93,15 @@ export default function Home() {
                     data-aos-duration={aosDuration}
                 >
                     <Faq />
+                </section>
+                
+                <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
+                    <Daughters />
                 </section>
 
                 <section

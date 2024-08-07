@@ -10,11 +10,20 @@ import founder from "@/public/images/founder.svg";
 export function About() {
     return (
         <>
-            <section className="section bg-muted">
+            <section className="section pt-20 bg-muted">
+                <div className="mb-20">
+                    <h1 className="sub-heading leading-normal md:w-[50%] mx-auto text-center">
+                        We provided free app subscription for the Daughters of India from 13.7.2022 till 18.5.2023 (Exam Nov 2022 & May 2023)
+                    </h1>
+                    <h1 className="sub-heading leading-relaxed md:w-[50%] mx-auto text-center">
+                        !! 156 Daughters have taken part in it !!
+                    </h1>
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
                     <div>
                         <h2 className="heading mb-5">
-                            About Verge CA
+                            VergeCA
                         </h2>
 
                         <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">
