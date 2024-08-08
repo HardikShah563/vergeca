@@ -6,6 +6,8 @@ import { Daughters } from "@/components/sections/daughters";
 import { Vision } from "@/components/sections/vision";
 import { Features } from "@/components/sections/features";
 import { Pricing } from "@/components/sections/pricing";
+import { Introduction } from "@/components/sections/introduction";
+import { Demo } from "@/components/sections/demo";
 import { Analysis } from "@/components/sections/analysis";
 import { Faq } from "@/components/sections/faq";
 import { ContactUs } from "@/components/sections/contact-us";
@@ -83,6 +85,24 @@ export default function Home() {
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
                 >
+                    <Introduction />
+                </section>
+
+                <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
+                    <Demo />
+                </section>
+
+                <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
                     <Analysis />
                 </section>
 
@@ -95,7 +115,7 @@ export default function Home() {
                 >
                     <Faq />
                 </section>
-                
+
                 <section
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"

@@ -1,10 +1,13 @@
 // importing from next
 import Image from "next/image";
 
+// importing images
+import web1 from "@/public/images/web1.png";
+
 // importing data
 import { demoImages } from "@/lib/data";
 
-export default function page() {
+export default function Demo() {
     return (
         <>
             <div className="section md:mt-10">
@@ -33,12 +36,21 @@ export default function page() {
                 </div>
 
             </div>
-            <div className="section pt-0">
+            <div className="section pt-0 mb-20">
                 <h2 className="heading mb-10 text-center capitalize">
                     Application Previews
                 </h2>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 space-y-10">
+                <Image
+                    src={web1}
+                    alt={"demo image - webapp"}
+                    className="h-full mt-10"
+                />
+                <h1 className="text-lg md:text-2xl font-bold text-center mt-2 leading-normal mb-10 md:mb-20">
+                    Demo interface of our web app
+                </h1>
+
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 space-y-14 md:space-y-10">
                     {demoImages.map((demoImg, index) => (
                         <div key={index}>
                             <Image
@@ -47,7 +59,7 @@ export default function page() {
                                 className="h-full"
                             />
                             {demoImg.title && (
-                                <h1 className="text-md md:text-lg font-bold text-center mt-2 leading-normal">
+                                <h1 className="text-xs md:text-lg font-bold text-center mt-2 leading-normal">
                                     {demoImg.title}
                                 </h1>
                             )}

@@ -353,6 +353,13 @@ import demo11 from "@/public/images/demo11.png";
 import demo12 from "@/public/images/demo12.png";
 import demo13 from "@/public/images/demo13.png";
 import demo14 from "@/public/images/demo14.png";
+import demo15 from "@/public/images/demo15.png";
+import demo16 from "@/public/images/demo16.png";
+import demo17 from "@/public/images/demo17.png";
+import demo18 from "@/public/images/demo18.png";
+import demo19 from "@/public/images/demo19.png";
+import demo20 from "@/public/images/demo20.png";
+import demo21 from "@/public/images/demo21.png";
 
 export const demoImages = [
     {
@@ -361,54 +368,78 @@ export const demoImages = [
     },
     {
         "image": demo2,
-        "title": "Various Options",
+        "title": "Register new account",
     },
     {
         "image": demo3,
-        "title": "Dashboard Page",
+        "title": "Menu options",
     },
     {
         "image": demo4,
-        "title": "Search Questions",
-    },
-    {
-        "image": demo5,
-        "title": "Select ICAI Materials",
+        "title": "Select level",
     },
     {
         "image": demo6,
-        "title": "Question Details",
+        "title": "Dashboard Page",
     },
     {
         "image": demo7,
-        "title": "Bookmark Questions",
+        "title": "Select Subject",
     },
     {
         "image": demo8,
-        "title": "Book Reference with Page No.",
+        "title": "Manage different categories of questions",
     },
     {
         "image": demo9,
-        "title": "Question referenced to Exam",
+        "title": "Select from array of chapters",
     },
     {
         "image": demo10,
-        "title": "Create your own notes",
+        "title": "Select from array of chapters",
     },
     {
         "image": demo11,
-        "title": "My profile",
+        "title": "Select from array of chapters",
     },
     {
         "image": demo12,
-        "title": "Renew Subscription",
+        "title": "Select material from multiple institutes",
     },
     {
         "image": demo13,
-        "title": "Payment procedure for subscription",
+        "title": "View Solutions",
     },
     {
         "image": demo14,
+        "title": "Toggle to bookmark your doubts/done/LDR/Test-Qs",
+    },
+    {
+        "image": demo15,
+        "title": "Exact reference of institute materials",
+    },
+    {
+        "image": demo16,
+        "title": "Exact reference of institute materials",
+    },
+    {
+        "image": demo17,
+        "title": "Create your own notes",
+    },
+    {
+        "image": demo18,
+        "title": "Profile Page",
+    },
+    {
+        "image": demo19,
+        "title": "Renew Subscription",
+    },
+    {
+        "image": demo20,
+        "title": "Payment procedure for subscription",
+    },
+    {
+        "image": demo21,
         "title": "Payment page for subscription",
     },
 ];
