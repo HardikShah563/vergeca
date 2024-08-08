@@ -16,7 +16,7 @@ export function About() {
                         We provided free app subscription for the Daughters of India from 13.7.2022 till 18.5.2023 (Exam Nov 2022 & May 2023)
                     </h1>
                     <h1 className="sub-heading leading-relaxed md:w-[50%] mx-auto text-center">
-                        !! 156 Daughters have taken part in it !!
+                        156 Daughters have taken part in it
                     </h1>
                 </div>
 

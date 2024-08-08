@@ -339,6 +339,80 @@ export const faq = [
     },
 ];
 
+import demo1 from "@/public/images/demo1.png";
+import demo2 from "@/public/images/demo2.png";
+import demo3 from "@/public/images/demo3.png";
+import demo4 from "@/public/images/demo4.png";
+import demo5 from "@/public/images/demo5.png";
+import demo6 from "@/public/images/demo6.png";
+import demo7 from "@/public/images/demo7.png";
+import demo8 from "@/public/images/demo8.png";
+import demo9 from "@/public/images/demo9.png";
+import demo10 from "@/public/images/demo10.png";
+import demo11 from "@/public/images/demo11.png";
+import demo12 from "@/public/images/demo12.png";
+import demo13 from "@/public/images/demo13.png";
+import demo14 from "@/public/images/demo14.png";
+
+export const demoImages = [
+    {
+        "image": demo1,
+        "title": "Login Page",
+    },
+    {
+        "image": demo2,
+        "title": "Various Options",
+    },
+    {
+        "image": demo3,
+        "title": "Dashboard Page",
+    },
+    {
+        "image": demo4,
+        "title": "Search Questions",
+    },
+    {
+        "image": demo5,
+        "title": "Select ICAI Materials",
+    },
+    {
+        "image": demo6,
+        "title": "Question Details",
+    },
+    {
+        "image": demo7,
+        "title": "Bookmark Questions",
+    },
+    {
+        "image": demo8,
+        "title": "Book Reference with Page No.",
+    },
+    {
+        "image": demo9,
+        "title": "Question referenced to Exam",
+    },
+    {
+        "image": demo10,
+        "title": "Create your own notes",
+    },
+    {
+        "image": demo11,
+        "title": "My profile",
+    },
+    {
+        "image": demo12,
+        "title": "Renew Subscription",
+    },
+    {
+        "image": demo13,
+        "title": "Payment procedure for subscription",
+    },
+    {
+        "image": demo14,
+        "title": "Payment page for subscription",
+    },
+];
+
 export const footerLinks = [
     {
         title: "Verge CA",

@@ -14,14 +14,14 @@ export function Daughters() {
     return (
         <>
             <section className="section">
-                <h2 className="heading mb-5">
+                <h2 className="heading text-center mb-5">
                     Daughters of India
                 </h2>
-                <p className="paragraph text-xl text-muted-foreground md:w-[90%] text-center md:text-left">
-                    See what students are saying about their experience with our platform.
+                <p className="paragraph text-lg md:text-xl text-muted-foreground md:w-[80%] lg:w-[60%] mx-auto text-center">
+                    We have provided free app subscription for the Daughters of India from 13.7.2022 till 18.5.2023 (Exam Nov 2022 & May 2023) and 156 Daughters have taken part in it
                 </p>
 
-                <div className="flex gap-10 px-40">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 sm:w-[80%] my-10 mx-auto">
                     <a
                         target="_blank"
                         href="http://www.swamisharnanandji.org/"
@@ -29,7 +29,7 @@ export function Daughters() {
                         <Image
                             src={daughter1}
                             alt={"daughter 1"}
-                            className="w-full"
+                            className="w-full h-full"
                         />
                     </a>
 
@@ -40,7 +40,7 @@ export function Daughters() {
                         <Image
                             src={daughter2}
                             alt={"daughter 2"}
-                            className="w-full"
+                            className="w-full h-full"
                         />
                     </a>
                 </div>
