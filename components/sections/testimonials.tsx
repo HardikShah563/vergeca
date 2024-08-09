@@ -30,7 +30,7 @@ export function InfiniteTestimonialScroll() {
     return (
         <>
             <div>
-                <div className="relative w-full flex items-center p-36 sm:p-20 md:p-48 overflow-x-hidden">
+                <div className="relative w-full flex items-center p-36 sm:p-40 md:48 lg:p-52 overflow-x-hidden">
                     <div className="flex absolute left-0 animate-marquee-infinite">
                         <div className="flex gap-5">
                             {testimonials.map((testimonial) => (

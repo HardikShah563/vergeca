@@ -22,10 +22,19 @@ interface PriceCardInterface {
     features: string[]
 }
 
+const freePlan = {
+    "name": "Free Plan",
+    "cost": 0,
+    "costDivision": "any one subject",
+    "duration": 2,
+    "userCount": 1,
+    "features": ["2 Days", "All Features"],
+};
+
 export function PricingCard(props: PriceCardInterface) {
     return (
         <>
-            <Card className="group flex flex-col items-center justify-between rounded-lg p-6 text-center shadow-sm transition-all w-[80vw] sm:w-60 border border-muted hover:border-muted-foreground hover:bg-muted">
+            <Card className="group flex flex-col items-center justify-between rounded-lg p-6 text-center shadow-sm transition-all w-[80vw] sm:w-full border border-muted hover:border-muted-foreground hover:bg-muted">
                 <div className="space-y-2">
                     <h3 className="text-2xl font-bold">{props.name}</h3>
                     <p className="text-4xl font-bold">₹{props.cost}</p>
@@ -73,7 +82,7 @@ export function Pricing() {
                             </p>
                         </div>
 
-                        <div className="w-full max-w-3xl flex flex-wrap justify-center gap-5">
+                        <div className="w-full md:w-[90vw] lg:w-[70vw] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                             {pricing.map((pricingCard) => (
                                 <PricingCard
                                     key={pricingCard.name}
@@ -86,6 +95,19 @@ export function Pricing() {
                                 />
                             ))}
                         </div>
+
+                        <Card className="p-5 md:px-10">
+                            <h1 className="text-2xl font-bold mb-5">Free Subscription</h1>
+                            <h1 className="text-md md:text-lg text-left md:text-center">
+                                Download the App and Register for free. Get 2 days of free access to any 1 subject
+                            </h1>
+
+                            <br className="block md:hidden" />
+
+                            <h1 className="text-md md:text-lg text-left md:text-center">
+                                Extend further for 7 days by providing Institute Registration Image on Whatsapp
+                            </h1>
+                        </Card>
                     </div>
                 </div>
             </section>

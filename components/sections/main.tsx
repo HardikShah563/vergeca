@@ -63,6 +63,7 @@ export function Main() {
                                                 src={playstore}
                                                 alt=""
                                                 className="w-[120px] sm:w-[140px] px-2 rounded-lg overflow-hidden"
+                                                fetchPriority="high"
                                             />
                                         </Link>
 
@@ -71,6 +72,7 @@ export function Main() {
                                                 src={appstore}
                                                 alt=""
                                                 className="w-[120px] sm:w-[140px] px-2"
+                                                fetchPriority="high"
                                             />
                                         </Link>
 
@@ -79,6 +81,7 @@ export function Main() {
                                                 src={webapp}
                                                 alt=""
                                                 className="w-[120px] sm:w-[140px] px-2"
+                                                fetchPriority="high"
                                             />
                                         </Link>
                                     </div>
@@ -89,60 +92,66 @@ export function Main() {
                                         src={mainBanner}
                                         alt={"main banner"}
                                         className="w-full"
+                                        fetchPriority="high"
                                     />
                                 </div>
                             </div>
                         </Card>
                     </CarouselItem>
                     <CarouselItem key={2} className="flex items-center">
-                        <Card className="md:h-[60vh] grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-10 md:px-20 bg-muted m-1 py-5 md:py-0">
-                            <div>
-                                <h1 className="heading text-center md:text-left">
-                                    App Introduction by Sir CA Hrudyesh Pankhania
-                                </h1>
+                        <Card className="md:h-[60vh] items-center bg-muted m-1 w-full">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
+                                <div>
+                                    <h1 className="heading text-center md:text-left leading-snug">
+                                        App Introduction by <br /> CA Hrudyesh Pankhania
+                                    </h1>
 
-                                <p className="paragraph text-xl text-muted-foreground text-center md:text-left capitalize">
-                                    {/* Learn from professionals about our app */}
-                                </p>
+                                    <p className="paragraph text-xl text-muted-foreground text-center md:text-left capitalize">
+                                        {/* Learn from professionals about our app */}
+                                    </p>
 
-                                <h1 className="text-md font-semibold mb-1">Now Available At: </h1>
-                                <div className="grid grid-cols-3 lg:w-[60%] gap-2 mx-auto md:mx-0">
-                                    <div className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                        <Image
-                                            src={playstore}
-                                            alt=""
-                                            className="w-[120px] sm:w-[140px] px-2 rounded-lg overflow-hidden"
-                                        />
-                                    </div>
+                                    <h1 className="text-md font-semibold mb-1">Now Available At: </h1>
+                                    <div className="grid grid-cols-3 lg:w-[60%] gap-2 mx-auto md:mx-0">
+                                        <Link target="_blank" href={"https://play.google.com/store/apps/details?id=com.vergeca&hl=en_IN"} className="rounded-lg overflow-hidden h-fit bg-foreground">
+                                            <Image
+                                                src={playstore}
+                                                alt=""
+                                                className="w-[120px] sm:w-[140px] px-2 rounded-lg overflow-hidden"
+                                                fetchPriority="high"
+                                            />
+                                        </Link>
 
-                                    <div className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                        <Image
-                                            src={appstore}
-                                            alt=""
-                                            className="w-[120px] sm:w-[140px] px-2"
-                                        />
-                                    </div>
+                                        <Link href={"/"} className="rounded-lg overflow-hidden h-fit bg-foreground">
+                                            <Image
+                                                src={appstore}
+                                                alt=""
+                                                className="w-[120px] sm:w-[140px] px-2"
+                                                fetchPriority="high"
+                                            />
+                                        </Link>
 
-                                    <div className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                        <Image
-                                            src={webapp}
-                                            alt=""
-                                            className="w-[120px] sm:w-[140px] px-2"
-                                        />
+                                        <Link target="_blank" href={"https://vergeca.in/web/login"} className="rounded-lg overflow-hidden h-fit bg-foreground">
+                                            <Image
+                                                src={webapp}
+                                                alt=""
+                                                className="w-[120px] sm:w-[140px] px-2"
+                                                fetchPriority="high"
+                                            />
+                                        </Link>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div>
-                                <iframe
-                                    className="aspect-video w-full"
-                                    src="https://www.youtube.com/embed/V6Q3N2BW1Oc?si=OjWcp_C3DQmjLN91"
-                                    title="Verge CA App Introduction by Sir CA Hrudyesh Pankhania"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                >
-                                </iframe>
+                                <div>
+                                    <iframe
+                                        className="aspect-video w-full"
+                                        src="https://www.youtube.com/embed/V6Q3N2BW1Oc?si=OjWcp_C3DQmjLN91"
+                                        title="Verge CA App Introduction by Sir CA Hrudyesh Pankhania"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerPolicy="strict-origin-when-cross-origin"
+                                        allowFullScreen
+                                    >
+                                    </iframe>
+                                </div>
                             </div>
                         </Card>
                     </CarouselItem>

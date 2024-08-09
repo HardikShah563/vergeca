@@ -16,7 +16,7 @@ export function VisionCard(props: VisionCardInterface) {
             <Image
                 src={props.image}
                 alt="vision img"
-                className="w-[50%]"
+                className="w-[50%] mx-auto md:mx-0"
             />
             <h3 className="mt-4 text-2xl font-semibold my-5">
                 {props.heading}
@@ -33,10 +33,10 @@ export function Vision() {
         <>
             <section id={"vision"} className={"section"}>
                 <div className="space-y-2 mb-20">
-                    <p className="max-w-[900px] text-muted-foreground font-semibold md:text-md">
+                    <p className="max-w-[900px] text-muted-foreground font-semibold md:text-md text-center md:text-left">
                         WHY CHOOSE US
                     </p>
-                    <h1 className="heading">
+                    <h1 className="heading text-center md:text-left">
                         Our Vision
                     </h1>
                 </div>

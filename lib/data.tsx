@@ -276,13 +276,6 @@ export const testimonials = [
 
 export const pricing = [
     {
-        "name": "Free Plan",
-        "cost": 0,
-        "costDivision": "any one subject",
-        "duration": 2,
-        "userCount": 1,
-        "features": ["2 Days", "All Features"],
-    }, {
         "name": "Monthly Plan",
         "cost": 99,
         "costDivision": "per subject",
