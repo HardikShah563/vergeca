@@ -4,10 +4,10 @@ export function Analysis() {
             <div className="section my-0 py-10 md:py-20 lg:py-36">
                 <div className="pb-10">
                     <h1 className="heading text-center md:text-left">
-                        Exam Analysis by CA Abhishek Bansal
+                        Exam Analysis by Sir CA Abhishek Bansal
                     </h1>
-                    <p className="paragraph text-xl text-muted-foreground text-center md:text-left capitalize">
-                        Get in-depth analysis of the past CA Exams
+                    <p className="paragraph text-xl text-muted-foreground text-center md:text-left">
+                        Get In-Depth Analysis of the Past CA Exams
                     </p>
                 </div>
 

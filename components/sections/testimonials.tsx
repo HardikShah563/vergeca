@@ -65,8 +65,8 @@ export function TestimonialCard({ text, avatar, name, designation }: Testimonial
     return (
         <>
             <Card className="min-w-[500px]">
-                <CardContent className="p-6 lg:p-8">
-                    <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">Feedback</p>
+                <CardContent className="p-6 lg:p-8 space-y-2">
+                    <p className="text-sm font-medium uppercase tracking-wide">Review 5 Star</p>
                     <p className="mt-1.5 font-semibold text-sm">
                         {text}
                     </p>
@@ -93,10 +93,10 @@ export function Testimonials() {
             <div className="px-[5vw] md:px-[10vw] pb-10 container flex flex-col-reverse md:flex-row justify-between items-center gap-4 lg:grid-cols-2 xl:gap-10">
                 <div className="space-y-4 mx-auto md:mx-0 md:w-[70%] lg:w-[50%]">
                     <h1 className="heading text-center md:text-left">
-                        Loved and trusted by students.
+                        Loved and Trusted by Students.
                     </h1>
                     <h2 className="sub-heading">
-                        (Ratings 4.8 by more than 219 reviews)
+                        (Ratings 4.8 by more than 220 reviews)
                     </h2>
                     {/* <span className="flex gap-1 heading text-center md:text-left">
                         (4.8/5 <Star className="w-12 h-12 fill-yellow-300" />)

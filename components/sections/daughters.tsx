@@ -15,10 +15,15 @@ export function Daughters() {
         <>
             <section className="section">
                 <h2 className="heading text-center mb-5">
-                    Daughters of India
+                    Daughters of India - Initiative
                 </h2>
+
                 <p className="paragraph text-lg md:text-xl text-muted-foreground md:w-[80%] lg:w-[60%] mx-auto text-center">
-                    We have provided free app subscription for the Daughters of India from 13.7.2022 till 18.5.2023 (Exam Nov 2022 & May 2023) and 156 Daughters have taken part in it
+                    App Subscription was Free from 13.7.2022 till 18.5.2023 (Exam Nov 2022 & May 2023) to Daughters of India!
+                </p>
+
+                <p className="paragraph text-lg md:text-xl text-muted-foreground md:w-[80%] lg:w-[60%] mx-auto text-center">
+                    (156 Daughters of India have taken part in the Initiative)
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 sm:w-[80%] my-10 mx-auto">

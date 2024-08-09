@@ -32,11 +32,7 @@ export function About() {
                             <span className="font-bold text-foreground">Neel Paresh Doshi</span>, the co-founder of Verge CA, is a
                             &nbsp;<span className="font-bold text-foreground">Chartered Accountant</span>&nbsp;
                             who achieved success in the CA Final exams on his first attempt in November 2023.
-                            He has also&nbsp;
-                            <span className="font-bold text-foreground">
-                                completed all three levels of the CFA (USA) program,
-                            </span>
-                            with the Charter Pending as of February 2023, and both levels of the CIPM (CFA USA) &nbsp;program in February 2024.
+                            Additionally, completed all 3 levels of the CFA (USA) program in Feb 2023, with the Charter Pending. Also completed both levels of CIPM (CFA USA) program in Feb 2024.
                             Neel has played a pivotal role in developing and curating online content and practice materials to aid CA aspirants in their journey.
                         </p>
 
@@ -67,13 +63,13 @@ export function About() {
                             CA Neel Paresh Doshi
                         </h3>
                         <p className="mt-2 text-muted-foreground font-medium">
-                            Founder
+                            Co-Founder
                         </p>
                         <p className="mt-2 text-muted-foreground font-medium">
                             Chartered Accountant
                         </p>
                         <p className="mt-2 text-muted-foreground font-medium">
-                            CFA & CIPM (USA)
+                            CFA (USA) & CIPM (CFA USA)
                         </p>
                     </div>
                 </div>

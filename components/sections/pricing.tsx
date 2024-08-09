@@ -1,13 +1,17 @@
+// importing from next
+import Image from "next/image";
+import Link from "next/link";
+
 // importing shadcn components
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pricing } from "@/lib/data";
 
 // importing icons
-import {
-    Check,
-    X
-} from "lucide-react";
+import { Check } from "lucide-react";
+
+// importimg images
+import razorpay from "@/public/images/razorpay.svg";
 
 interface PriceCardInterface {
     name: string,
@@ -35,7 +39,20 @@ export function PricingCard(props: PriceCardInterface) {
                         </li>
                     ))}
                 </ul>
-                <Button variant={"default"} className="w-full bg-accent group-hover:bg-foreground">Get Started</Button>
+
+
+                <Button variant={"default"} className="w-full bg-accent group-hover:bg-foreground gap-2" asChild>
+                    <Link
+                        href={"https://razorpay.com/payment-button/pl_NHp37ij40PUezS/view/"}
+                    >
+                        Get Started
+                        <Image
+                            src={razorpay}
+                            alt={"razorpay icon"}
+                            className="w-5"
+                        />
+                    </Link>
+                </Button>
             </Card>
         </>
     );

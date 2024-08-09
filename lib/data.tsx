@@ -278,17 +278,17 @@ export const pricing = [
     {
         "name": "Free Plan",
         "cost": 0,
-        "costDivision": "per subject",
-        "duration": 30,
+        "costDivision": "any one subject",
+        "duration": 2,
         "userCount": 1,
-        "features": ["Unlimited Login", "All Features"],
+        "features": ["2 Days", "All Features"],
     }, {
         "name": "Monthly Plan",
         "cost": 99,
         "costDivision": "per subject",
         "duration": 30,
         "userCount": 1,
-        "features": ["Unlimited Login", "All Features"],
+        "features": ["30 Days", "All Features"],
     },
     {
         "name": "Quaterly Plan",
@@ -296,15 +296,15 @@ export const pricing = [
         "costDivision": "per subject",
         "duration": 90,
         "userCount": 1,
-        "features": ["Unlimited Login", "All Features"],
+        "features": ["90 Days", "All Features"],
     },
     {
-        "name": "Bianual Plan",
+        "name": "Bi-annual Plan",
         "cost": 299,
         "costDivision": "per subject",
         "duration": 180,
         "userCount": 1,
-        "features": ["Unlimited Login", "All Features"],
+        "features": ["180 Days", "All Features"],
     },
     {
         "name": "Annual Plan",
@@ -312,7 +312,7 @@ export const pricing = [
         "costDivision": "per subject",
         "duration": 360,
         "userCount": 1,
-        "features": ["Unlimited Login", "All Features"],
+        "features": ["360 Days", "All Features"],
     },
 ];
 
@@ -487,24 +487,16 @@ export const footerLinks = [
         title: "Others",
         link: [
             {
-                title: "Payments",
-                link: "/payments"
+                title: "We use Razorpay",
+                link: ""
             },
             {
-                title: "Terms",
-                link: "/terms"
+                title: "Telegram Channel",
+                link: "https://t.me/vergeca"
             },
             {
-                title: "Data",
-                link: "/data"
-            },
-            {
-                title: "FAQ",
-                link: "/faq"
-            },
-            {
-                title: "Articles",
-                link: "/articles"
+                title: "WhatsApp Group",
+                link: "https://wa.me/message/K7QI5MNW454VH1"
             },
         ]
     },

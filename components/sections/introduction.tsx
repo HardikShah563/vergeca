@@ -7,7 +7,7 @@ export function Introduction() {
                         App introduction by CA Hrudyesh Pankhania
                     </h1>
                     <p className="paragraph text-xl text-muted-foreground text-center capitalize">
-                        Get in-depth analysis of the past CA Exams
+                        {/* Get in-depth analysis of the past CA Exams */}
                     </p>
                 </div>
 
