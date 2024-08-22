@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ArrowButton } from "./arrow-button";
 
 // importing image
-import founder from "@/public/images/founder.svg";
+import founder from "@/public/images/neel.png";
 
 export function About() {
     return (
@@ -45,20 +45,20 @@ export function About() {
                     </div>
 
                     <div className="flex flex-col items-center">
-                        <img
+                        {/* <img
                             alt="Neel Paresh Doshi Picture"
                             className="object-cover bg-background"
                             height="400"
                             src="/placeholder.svg"
                             width="300"
-                        />
-                        {/* 
+                        /> */}
+                        
                         <Image
                             src={founder}
                             alt="Neel Paresh Doshi Picture"
-                            className="-rotate-90 w-[300px]"
+                            className="w-[300px]"
                         />
-                         */}
+                        
                         <h3 className="mt-4 text-xl font-bold text-foreground">
                             CA Neel Paresh Doshi
                         </h3>

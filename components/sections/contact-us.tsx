@@ -1,3 +1,8 @@
+"use client";
+
+// importing from react
+import { useState } from "react";
+
 // importing shadcn components
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -7,8 +12,92 @@ import { Textarea } from "@/components/ui/textarea";
 
 // importing icons
 import { ArrowUpRight } from "lucide-react";
+import SendMail from "./SendMail";
 
 export function ContactUs() {
+    const [formData, setFormData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: ""
+    });
+
+    function handleChange(event: any) {
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value
+        });
+    }
+
+    async function handleSubmit(event: any) {
+        event.preventDefault();
+
+        const response = await fetch('https://api.example.com/data');
+    }
+    // $(function () {
+
+    //     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+    //         preventSubmit: true,
+    //         submitError: function ($form, event, errors) {
+    //             // additional error messages or events
+    //         },
+    //         submitSuccess: function ($form, event) {
+    //             event.preventDefault(); // prevent default submit behaviour
+    //             // get values from FORM
+    //             var name = $("input#name").val();
+    //             var email = $("input#email").val();
+    //             var phone = $("input#phone").val();
+    //             var message = $("textarea#message").val();
+    //             var firstName = name; // For Success/Failure Message
+    //             // Check for white space in name for Success/Fail message
+    //             if (firstName.indexOf(' ') >= 0) {
+    //                 firstName = name.split(' ').slice(0, -1).join(' ');
+    //             }
+    //             $.ajax({
+    //                 url: "https://vergeca.in/G8g2GpupCrxpsED-vergeca-v2-bSfejdRNEKd3Blq/admin_api/index.php/api/contactquery",
+    //                 type: "POST",
+    //                 data: {
+    //                     name: name,
+    //                     phone: phone,
+    //                     email: email,
+    //                     message: message
+    //                 },
+    //                 cache: false,
+    //                 success: function () {
+    //                     // Success message
+    //                     $('#success').html("<div class='alert alert-success'>");
+    //                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+    //                         .append("</button>");
+    //                     $('#success > .alert-success')
+    //                         .append("<strong>Thank you for writing to us. We will review your message and get in touch soon if needed. </strong>");
+    //                     $('#success > .alert-success')
+    //                         .append('</div>');
+
+    //                     //clear all fields
+    //                     $('#contactForm').trigger("reset");
+    //                 },
+    //                 error: function () {
+    //                     // Fail message
+    //                     $('#success').html("<div class='alert alert-danger'>");
+    //                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+    //                         .append("</button>");
+    //                     $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+    //                     $('#success > .alert-danger').append('</div>');
+    //                     //clear all fields
+    //                     $('#contactForm').trigger("reset");
+    //                 },
+    //             });
+    //         },
+    //         filter: function () {
+    //             return $(this).is(":visible");
+    //         },
+    //     });
+
+    //     $("a[data-toggle=\"tab\"]").click(function (e) {
+    //         e.preventDefault();
+    //         $(this).tab("show");
+    //     });
+    // });
     return (
         <>
             <section className="section pt-10">
@@ -19,34 +108,7 @@ export function ContactUs() {
                 </div>
 
                 <div className="px-[5vw] md:px-[10vw] lg:px-[20vw] space-y-4">
-                    <div className="grid lg:grid-cols-2 gap-4">
-                        <div className="space-y-1">
-                            <Label htmlFor="first-name">Name</Label>
-                            <Input id="first-name" placeholder="Enter your first name" />
-                        </div>
-                        <div className="space-y-1">
-                            <Label htmlFor="last-name">Phone Number</Label>
-                            <Input id="last-name" placeholder="Enter your mobile number" />
-                        </div>
-                    </div>
-                    <div className="space-y-1">
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" placeholder="Enter your email" type="email" />
-                    </div>
-                    <div className="space-y-1">
-                        <Label>Subject</Label>
-                        <Input id="subject" placeholder="Enter your subject" />
-                    </div>
-                    <div className="space-y-1">
-                        <Label htmlFor="message">Message</Label>
-                        <Textarea id="message" placeholder="Enter your message" className="min-h-[100px]" />
-                    </div>
-                    <Button
-                        variant={"default"}
-                        className="w-full bg-accent group-hover:bg-foreground gap-1"
-                    >
-                        Send message <ArrowUpRight className="w-4 h-4" />
-                    </Button>
+                    <SendMail />
 
                     <div className="flex items-center gap-5 w-full py-5">
                         <div className="border w-full"></div>

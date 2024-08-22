@@ -147,11 +147,11 @@ export function Footer() {
                 </div>
 
                 <div className="mt-10">
-                    <h5 className="text-xs font-semibold mb-1 text-center sm:text-left">Developed and Powered by:</h5>
-                    <a target="_blank" href="https://www.hellohardik.xyz">
+                    <h5 className="text-xs font-semibold mb-1 text-center sm:text-left">Developed by:</h5>
+                    <a target="_blank" href="https://www.valueye.in">
                         <Image
                             src={valueye}
-                            alt="Hello Hardik"
+                            alt="Valueye Text logo"
                             className="w-[200px] mx-auto sm:mx-0 my-5"
                         />
                     </a>
