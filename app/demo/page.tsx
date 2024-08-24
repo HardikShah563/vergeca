@@ -11,19 +11,11 @@ export default function Demo() {
     return (
         <>
             <div className="section md:mt-10">
-                <h2 className="heading mb-10 text-center capitalize">
+                <h2 className="heading mb-10 text-center">
                     Demo of the App
                 </h2>
 
                 <div className="space-y-10 mx-auto">
-                    <div>
-                        <p className="paragraph text-center sm:w-[80%] lg:w-[60%] mx-auto">
-                            The app is available in the form of Web App as well as an android app.
-                            You can check our video in which CA Hrudyesh Pankhania explains the functions of the app.
-                            Below is a detailed summary with screenshots.
-                        </p>
-                    </div>
-
                     <iframe
                         className="aspect-video w-[90vw] sm:w-[80vw] md:w-[700px] mx-auto"
                         src="https://www.youtube.com/embed/V6Q3N2BW1Oc?si=tzyrsmYJrG6RRLK7"

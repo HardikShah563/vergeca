@@ -5,9 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 // importing image
-import playstore from "@/public/images/playstore.svg";
-import appstore from "@/public/images/appstore.svg";
-import webapp from "@/public/images/webapp.svg";
 import logo from "@/public/images/logo.svg";
 import valueye from "@/public/valueye.png";
 
@@ -19,6 +16,9 @@ import {
 } from "lucide-react";
 import { WhatsappIcon } from "./whatsapp-icon";
 import { TelegramIcon } from "./telegram-icon";
+
+// importing components
+import { Availability } from "../sections/availability";
 
 export function Footer() {
     function LinkedinIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
@@ -43,7 +43,7 @@ export function Footer() {
 
     return (
         <>
-            <footer className="px-[4vw] lg:px-[8vw] py-10 bg-accent text-background">
+            <footer className="px-[4vw] lg:px-[8vw] py-5 bg-accent text-background">
                 <div className="">
                     <Image
                         src={logo}
@@ -67,35 +67,7 @@ export function Footer() {
                             </li>
                         </ul>
 
-                        <div>
-                            <h1 className="text-sm font-bold ml-1">Available at</h1>
-
-                            <div className="flex flex-wrap gap-2 mt-2">
-                                <div className="rounded-lg overflow-hidden h-fit bg-foreground w-fit px-2">
-                                    <Image
-                                        src={playstore}
-                                        alt=""
-                                        className="max-w-[100px] rounded-lg overflow-hidden"
-                                    />
-                                </div>
-
-                                <div className="rounded-lg overflow-hidden h-fit bg-foreground w-fit px-2">
-                                    <Image
-                                        src={appstore}
-                                        alt=""
-                                        className="max-w-[100px]"
-                                    />
-                                </div>
-
-                                <div className="rounded-lg overflow-hidden h-fit bg-foreground w-fit px-2">
-                                    <Image
-                                        src={webapp}
-                                        alt=""
-                                        className="max-w-[100px]"
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                        <Availability />
                     </div>
 
                     {footerLinks.map((linkSet) => (

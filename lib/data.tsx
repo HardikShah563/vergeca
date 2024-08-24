@@ -361,15 +361,15 @@ export const demoImages = [
     },
     {
         "image": demo2,
-        "title": "Register new account",
+        "title": "Register New Account",
     },
     {
         "image": demo3,
-        "title": "Menu options",
+        "title": "Menu Options",
     },
     {
         "image": demo4,
-        "title": "Select level",
+        "title": "Select Level",
     },
     {
         "image": demo6,
@@ -381,23 +381,23 @@ export const demoImages = [
     },
     {
         "image": demo8,
-        "title": "Manage different categories of questions",
+        "title": "Select your own Doubt/Done & LMR",
     },
     {
         "image": demo9,
-        "title": "Select from array of chapters",
+        "title": "Select Chapters",
     },
     {
         "image": demo10,
-        "title": "Select from array of chapters",
+        "title": "Select Chapters",
     },
     {
         "image": demo11,
-        "title": "Select from array of chapters",
+        "title": "Select Chapters",
     },
     {
         "image": demo12,
-        "title": "Select material from multiple institutes",
+        "title": "Select material ICAI Material",
     },
     {
         "image": demo13,
@@ -417,7 +417,7 @@ export const demoImages = [
     },
     {
         "image": demo17,
-        "title": "Create your own notes",
+        "title": "Input Notes & Upload your Solution Images",
     },
     {
         "image": demo18,
@@ -429,11 +429,11 @@ export const demoImages = [
     },
     {
         "image": demo20,
-        "title": "Payment procedure for subscription",
+        "title": "Payment Procedure for Subscription",
     },
     {
         "image": demo21,
-        "title": "Payment page for subscription",
+        "title": "Razorpay Payment Gateway",
     },
 ];
 
@@ -446,10 +446,6 @@ export const footerLinks = [
                 link: "/about"
             },
             {
-                title: "About App",
-                link: "/about-app"
-            },
-            {
                 title: "Features",
                 link: "/features"
             },
@@ -457,10 +453,10 @@ export const footerLinks = [
                 title: "FAQ",
                 link: "/faq"
             },
-            {
-                title: "Articles",
-                link: "/articles"
-            },
+            // {
+            //     title: "Downloads",
+            //     link: "/downloads"
+            // },
         ]
     },
     {

@@ -24,6 +24,7 @@ import playstore from "@/public/images/playstore.svg";
 import appstore from "@/public/images/appstore.svg";
 import webapp from "@/public/images/webapp.svg";
 import { MoveLeft, MoveRight } from "lucide-react";
+import { Availability } from "./availability";
 
 export function Main() {
     const [api, setApi] = useState<CarouselApi>();
@@ -56,35 +57,7 @@ export function Main() {
                                         Revision App for CA Inter & CA Final Students
                                     </h1>
 
-                                    <h1 className="text-md font-semibold mb-1">Now Available At: </h1>
-                                    <div className="grid grid-cols-3 lg:w-[60%] gap-2 mx-auto md:mx-0">
-                                        <Link target="_blank" href={"https://play.google.com/store/apps/details?id=com.vergeca&hl=en_IN"} className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                            <Image
-                                                src={playstore}
-                                                alt=""
-                                                className="w-[120px] sm:w-[140px] px-2 rounded-lg overflow-hidden"
-                                                fetchPriority="high"
-                                            />
-                                        </Link>
-
-                                        <Link href={"/"} className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                            <Image
-                                                src={appstore}
-                                                alt=""
-                                                className="w-[120px] sm:w-[140px] px-2"
-                                                fetchPriority="high"
-                                            />
-                                        </Link>
-
-                                        <Link target="_blank" href={"https://vergeca.in/web/login"} className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                            <Image
-                                                src={webapp}
-                                                alt=""
-                                                className="w-[120px] sm:w-[140px] px-2"
-                                                fetchPriority="high"
-                                            />
-                                        </Link>
-                                    </div>
+                                    <Availability />
                                 </div>
 
                                 <div>
@@ -110,35 +83,7 @@ export function Main() {
                                         {/* Learn from professionals about our app */}
                                     </p>
 
-                                    <h1 className="text-md font-semibold mb-1">Now Available At: </h1>
-                                    <div className="grid grid-cols-3 lg:w-[60%] gap-2 mx-auto md:mx-0">
-                                        <Link target="_blank" href={"https://play.google.com/store/apps/details?id=com.vergeca&hl=en_IN"} className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                            <Image
-                                                src={playstore}
-                                                alt=""
-                                                className="w-[120px] sm:w-[140px] px-2 rounded-lg overflow-hidden"
-                                                fetchPriority="high"
-                                            />
-                                        </Link>
-
-                                        <Link href={"/"} className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                            <Image
-                                                src={appstore}
-                                                alt=""
-                                                className="w-[120px] sm:w-[140px] px-2"
-                                                fetchPriority="high"
-                                            />
-                                        </Link>
-
-                                        <Link target="_blank" href={"https://vergeca.in/web/login"} className="rounded-lg overflow-hidden h-fit bg-foreground">
-                                            <Image
-                                                src={webapp}
-                                                alt=""
-                                                className="w-[120px] sm:w-[140px] px-2"
-                                                fetchPriority="high"
-                                            />
-                                        </Link>
-                                    </div>
+                                    <Availability />
                                 </div>
 
                                 <div>
