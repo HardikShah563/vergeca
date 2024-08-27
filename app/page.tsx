@@ -5,6 +5,8 @@ import { About } from "@/components/sections/about";
 import { Daughters } from "@/components/sections/daughters";
 import { Vision } from "@/components/sections/vision";
 import { Features } from "@/components/sections/features";
+import { Icai } from "@/components/sections/icai";
+import { Testimonials } from "@/components/sections/testimonials";
 import { Pricing } from "@/components/sections/pricing";
 import { Introduction } from "@/components/sections/introduction";
 import { Demo } from "@/components/sections/demo";
@@ -12,7 +14,7 @@ import { Analysis } from "@/components/sections/analysis";
 import { Faq } from "@/components/sections/faq";
 import { ContactUs } from "@/components/sections/contact-us";
 import { AOS_Component } from "@/components/aos/aos";
-import { Testimonials } from "@/components/sections/testimonials";
+import { Support } from "@/components/sections/support";
 
 export default function Home() {
     const aosDelay = 200;
@@ -24,6 +26,7 @@ export default function Home() {
                 <AOS_Component />
 
                 <FixedIcons />
+                <Support />
 
                 <section
                     data-aos="fade-up"
@@ -59,6 +62,15 @@ export default function Home() {
                     data-aos-duration={aosDuration}
                 >
                     <Features />
+                </section>
+
+                <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                >
+                    <Icai />
                 </section>
 
                 <section

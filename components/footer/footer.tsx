@@ -51,7 +51,7 @@ export function Footer() {
 
     return (
         <>
-            <footer className="px-[4vw] lg:px-[8vw] py-5 bg-accent text-background text-center md:text-left">
+            <footer className="px-[4vw] lg:px-[8vw] py-20 md:py-5 bg-accent text-background text-center md:text-left">
                 <div className="">
                     <Image
                         src={logo}
@@ -117,18 +117,7 @@ export function Footer() {
                     </div>
 
                     <TooltipProvider>
-                        <div className="flex gap-10">
-                            <Tooltip delayDuration={0}>
-                                <TooltipTrigger>
-                                    <a target="_blank" href="https://www.linkedin.com/in/vergeca">
-                                        <LinkedinIcon className="w-6 h-6 fill-background" />
-                                    </a>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>Verge CA LinkedIn</p>
-                                </TooltipContent>
-                            </Tooltip>
-
+                        <div className="flex gap-5 md:gap-10">
                             <Tooltip delayDuration={0}>
                                 <TooltipTrigger>
                                     <a target="_blank" href="https://t.me/vergeca">
@@ -136,7 +125,18 @@ export function Footer() {
                                     </a>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>Verge CA Telegram Channel</p>
+                                    <p>Verge CA Telegram Channel-CA Inter</p>
+                                </TooltipContent>
+                            </Tooltip>
+
+                            <Tooltip delayDuration={0}>
+                                <TooltipTrigger>
+                                    <a target="_blank" href="https://t.me/vergecaca">
+                                        <TelegramIcon className="w-6 h-6 fill-background" />
+                                    </a>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Verge CA Telegram Channel-CA Final</p>
                                 </TooltipContent>
                             </Tooltip>
 
@@ -148,6 +148,28 @@ export function Footer() {
                                 </TooltipTrigger>
                                 <TooltipContent>
                                     <p>Verge CA Whatsapp Channel</p>
+                                </TooltipContent>
+                            </Tooltip>
+
+                            <Tooltip delayDuration={0}>
+                                <TooltipTrigger>
+                                    <a target="_blank" href="https://wa.me/9870942020">
+                                        <WhatsappIcon className="w-6 h-6 fill-background" />
+                                    </a>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Verge CA Whatsapp Chat</p>
+                                </TooltipContent>
+                            </Tooltip>
+
+                            <Tooltip delayDuration={0}>
+                                <TooltipTrigger>
+                                    <a target="_blank" href="https://www.linkedin.com/in/vergeca">
+                                        <LinkedinIcon className="w-6 h-6 fill-background" />
+                                    </a>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Verge CA LinkedIn</p>
                                 </TooltipContent>
                             </Tooltip>
 
@@ -171,7 +193,7 @@ export function Footer() {
                         <Image
                             src={valueye}
                             alt="Valueye Text logo"
-                            className="w-[300px] mx-auto sm:mx-0"
+                            className="w-[100%] md:w-[300px] mx-auto sm:mx-0"
                         />
                     </a>
                 </div>

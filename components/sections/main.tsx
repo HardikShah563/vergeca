@@ -59,6 +59,48 @@ function Carousel1() {
     );
 }
 
+function Carousel2() {
+    return (
+        <>
+            <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full">
+                <div className="flex flex-col md:flex-row gap-10 h-full justify-center items-center w-[90%] mx-auto py-5 md:py-0">
+                    <div>
+                        <h1 className="heading md:text-6xl lg:text-6xl text-center md:text-left uppercase whitespace-nowrap">
+                            Web App
+                        </h1>
+
+                        <h1 className="sub-heading text-center md:text-left">
+                            Get Exclusive Access to the Web App
+                        </h1>
+
+                        <div className="space-y-2 text-center md:text-left">
+                            <h1 className="text-md font-semibold mb-1">Available at: </h1>
+                            <a target="_blank" href={"https://vergeca.in/web/login"} className="flex gap-3 justify-center md:justify-start">
+                                <Image
+                                    src={webapp}
+                                    alt=""
+                                    className="w-[100px] sm:w-[140px] h-[36px] sm:h-[42px]"
+                                    fetchPriority="high"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <Image
+                            src={mainBanner3}
+                            alt={"main banner 2"}
+                            className="w-full"
+                            fetchPriority="high"
+                        />
+                    </div>
+                </div>
+            </Card>
+        </>
+    );
+}
+
+
 function Carousel3() {
     return (
         <>
@@ -82,47 +124,6 @@ function Carousel3() {
                         className="w-fit mx-auto rounded-lg"
                         fetchPriority="high"
                     />
-                </div>
-            </Card>
-        </>
-    );
-}
-
-function Carousel2() {
-    return (
-        <>
-            <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full">
-                <div className="flex flex-col md:flex-row gap-10 h-full justify-center items-center w-[80%] mx-auto py-5 md:py-0">
-                    <div>
-                        <h1 className="heading md:text-6xl lg:text-7xl text-center md:text-left uppercase">
-                            Web App
-                        </h1>
-
-                        <h1 className="sub-heading text-center md:text-left">
-                            Get Exclusive Access to the Web App
-                        </h1>
-
-                        <div className="space-y-2 text-center md:text-left">
-                            <h1 className="text-md font-semibold mb-1">Available at: </h1>
-                            <div className="flex gap-3 justify-center md:justify-start">
-                                <Image
-                                    src={webapp}
-                                    alt=""
-                                    className="w-[100px] sm:w-[140px] h-[36px] sm:h-[42px]"
-                                    fetchPriority="high"
-                                />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <Image
-                            src={mainBanner3}
-                            alt={"main banner 2"}
-                            className="w-full"
-                            fetchPriority="high"
-                        />
-                    </div>
                 </div>
             </Card>
         </>

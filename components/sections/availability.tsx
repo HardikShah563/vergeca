@@ -26,7 +26,7 @@ export function Availability() {
                             <Image
                                 src={webapp}
                                 alt=""
-                                className="w-[100px] sm:w-[140px] h-[36px] sm:h-[42px] "
+                                className="w-[100px] sm:w-[140px] h-[36px] sm:h-[42px] rounded-lg"
                                 fetchPriority="high"
                             />
                         </a>

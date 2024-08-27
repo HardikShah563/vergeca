@@ -30,7 +30,7 @@ export function InfiniteTestimonialScroll() {
     return (
         <>
             <div>
-                <div className="relative w-full flex items-center p-36 sm:p-40 md:48 lg:p-52 overflow-x-hidden">
+                <div className="relative w-full flex items-center p-52 overflow-x-hidden">
                     <div className="flex absolute left-0 animate-marquee-infinite">
                         <div className="flex gap-5">
                             {testimonials.map((testimonial) => (
@@ -66,7 +66,7 @@ export function TestimonialCard({ text, avatar, name, designation }: Testimonial
         <>
             <Card className="min-w-[500px] bg-muted">
                 <CardContent className="p-6 lg:p-8 space-y-2">
-                    <p className="text-sm font-medium uppercase tracking-wide">Review 5 Star</p>
+                    {/* <p className="text-sm font-medium uppercase tracking-wide">Review 5 Star</p> */}
                     <p className="mt-1.5 font-semibold">
                         {text}
                     </p>

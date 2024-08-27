@@ -471,15 +471,15 @@ export const footerLinks = [
                 link: "https://t.me/vergecaca"
             },
             {
-                title: "WhatsApp",
+                title: "WhatsApp Group",
                 link: "https://wa.me/message/K7QI5MNW454VH1"
             },
             {
-                title: "LinkedIn Verge CA",
+                title: "LinkedIn-Verge CA",
                 link: "https://www.linkedin.com/in/vergeca"
             },
             {
-                title: "LinkedIn Neel",
+                title: "LinkedIn-Neel Doshi",
                 link: "https://www.linkedin.com/in/cacfaneel0409"
             },
             {

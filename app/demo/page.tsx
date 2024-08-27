@@ -43,7 +43,7 @@ export default function Demo() {
             </div>
             <div className="section pt-0 mb-20">
                 <h2 className="heading mb-10 text-center capitalize">
-                    Application Previews
+                    Web Application Previews
                 </h2>
 
                 <Image
@@ -54,6 +54,10 @@ export default function Demo() {
                 <h1 className="text-lg md:text-2xl font-bold text-center mt-2 leading-normal mb-10 md:mb-20">
                     Demo Interface of Web App
                 </h1>
+
+                <h2 className="heading mb-10 text-center capitalize">
+                    Mobile Application Previews
+                </h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 space-y-14 md:space-y-10">
                     {demoImages.map((demoImg, index) => (

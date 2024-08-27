@@ -8,19 +8,11 @@ import { TelegramIcon } from "../footer/telegram-icon";
 export function FixedIcons() {
     return (
         <>
-            <div className="fixed z-20 -left-[240px] md:-left-[280px] top-[60vh] md:top-[50vh] -rotate-90 flex gap-1">
-                <a
-                    target="_blank"
-                    href={"https://t.me/vergeca"}
-                    className="bg-[#24A1DE] z-20 px-2 md:px-4 py-2 flex items-center gap-2 text-background rounded-md text-xs font-bold md:text-md"
-                >
-                    <TelegramIcon className="text-background w-4 h-4" /> Telegram Final
-                </a>
-
+            <div className="fixed z-20 -left-[110px] md:-left-[135px] top-[50vh] -rotate-90 flex gap-1">
                 <a
                     target="_blank"
                     href={"https://www.linkedin.com/in/cacfaneel0409"}
-                    className="bg-accent z-20 px-2 md:px-4 py-2 flex items-center gap-2 text-background rounded-md text-xs font-bold md:text-md"
+                    className="bg-[#24A1DE] z-20 px-2 md:px-4 py-2 flex items-center gap-2 text-background rounded-md text-xs font-bold md:text-md"
                 >
                     <Linkedin className="text-background w-4 h-4" /> Neel
                 </a>
@@ -35,16 +27,8 @@ export function FixedIcons() {
 
                 <a
                     target="_blank"
-                    href={"https://t.me/vergeca"}
-                    className="bg-[#24A1DE] z-20 px-2 md:px-4 py-2 flex items-center gap-2 text-background rounded-md text-xs font-bold md:text-md"
-                >
-                    <TelegramIcon className="text-background w-4 h-4" /> Telegram Inter
-                </a>
-
-                <a
-                    target="_blank"
                     href={"https://www.linkedin.com/in/vergeca"}
-                    className="bg-accent z-20 px-2 md:px-4 py-2 flex items-center gap-2 text-background rounded-md text-xs font-bold md:text-md"
+                    className="bg-[#24A1DE] z-20 px-2 md:px-4 py-2 flex items-center gap-2 text-background rounded-md text-xs font-bold md:text-md"
                 >
                     <Linkedin className="text-background w-4 h-4" /> VergeCA
                 </a>
