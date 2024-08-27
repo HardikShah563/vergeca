@@ -33,7 +33,7 @@ export function Availability() {
                     </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-">
                     <h1 className="text-md font-semibold mb-1">Coming Soon: </h1>
                     <div className="flex gap-3 justify-center md:justify-start">
                         <Image

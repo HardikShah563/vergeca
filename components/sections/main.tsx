@@ -18,12 +18,15 @@ import {
     type CarouselApi
 } from "@/components/ui/carousel";
 
+// importing components
+import { Availability } from "./availability";
+
 // importing image
 import mainBanner from "@/public/images/mainBanner.svg";
 import mainBanner2 from "@/public/images/mainBanner2.png";
 import mainBanner3 from "@/public/images/mainBanner3.png";
 import { MoveLeft, MoveRight } from "lucide-react";
-import { Availability } from "./availability";
+import webapp from "@/public/images/webapp.png";
 
 function Carousel1() {
     return (
@@ -56,14 +59,14 @@ function Carousel1() {
     );
 }
 
-function Carouse2() {
+function Carousel3() {
     return (
         <>
             <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full p-5">
                 <div className="flex flex-wrap md:flex-nowrap justify-evenly gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
                     <div>
                         <h1 className="heading md:text-6xl lg:text-7xl text-center md:text-left uppercase">
-                            Revision/ Test App
+                            Verge CA
                         </h1>
 
                         <h1 className="sub-heading text-center md:text-left hidden md:block">
@@ -85,19 +88,31 @@ function Carouse2() {
     );
 }
 
-function Carousel3() {
+function Carousel2() {
     return (
         <>
             <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
+                <div className="flex flex-col md:flex-row gap-10 h-full justify-center items-center w-[80%] mx-auto py-5 md:py-0">
                     <div>
                         <h1 className="heading md:text-6xl lg:text-7xl text-center md:text-left uppercase">
                             Web App
                         </h1>
 
                         <h1 className="sub-heading text-center md:text-left">
-                            Get Exclusive Access to the Web App now
+                            Get Exclusive Access to the Web App
                         </h1>
+
+                        <div className="space-y-2 text-center md:text-left">
+                            <h1 className="text-md font-semibold mb-1">Available at: </h1>
+                            <div className="flex gap-3 justify-center md:justify-start">
+                                <Image
+                                    src={webapp}
+                                    alt=""
+                                    className="w-[100px] sm:w-[140px] h-[36px] sm:h-[42px]"
+                                    fetchPriority="high"
+                                />
+                            </div>
+                        </div>
                     </div>
 
                     <div>
@@ -172,7 +187,7 @@ export function Main() {
                     </CarouselItem>
 
                     <CarouselItem key={2} className="flex items-center">
-                        <Carouse2 />
+                        <Carousel2 />
                     </CarouselItem>
 
                     <CarouselItem key={3} className="flex items-center">

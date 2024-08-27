@@ -4,7 +4,7 @@ export function Introduction() {
             <div className="section my-0 py-10 md:py-20 lg:py-36">
                 <div className="pb-10">
                     <h1 className="heading text-center">
-                        App introduction by CA Hrudyesh Pankhania
+                        App Introduction by CA Hrudyesh Pankhania
                     </h1>
                     <p className="paragraph text-xl text-muted-foreground text-center capitalize">
                         {/* Get in-depth analysis of the past CA Exams */}

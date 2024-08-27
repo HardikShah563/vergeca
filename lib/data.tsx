@@ -381,7 +381,7 @@ export const demoImages = [
     },
     {
         "image": demo8,
-        "title": "Select your own Doubt/Done & LMR",
+        "title": "Select your Own Marked Doubt/Done/LDR/Test Qs",
     },
     {
         "image": demo9,
@@ -397,7 +397,7 @@ export const demoImages = [
     },
     {
         "image": demo12,
-        "title": "Select multiple ICAI Material",
+        "title": "Select Multiple ICAI Materials",
     },
     {
         "image": demo13,
@@ -405,15 +405,15 @@ export const demoImages = [
     },
     {
         "image": demo14,
-        "title": "Toggle to bookmark your doubts/done/LDR/Test-Qs",
+        "title": "Toggle to Bookmark your Doubt/Done/LDR/Test Qs",
     },
     {
         "image": demo15,
-        "title": "Exact reference of institute materials",
+        "title": "Exact Reference of Institute Materials",
     },
     {
         "image": demo16,
-        "title": "Exact reference of institute materials",
+        "title": "Exact Reference of Institute Materials",
     },
     {
         "image": demo17,
@@ -421,7 +421,7 @@ export const demoImages = [
     },
     {
         "image": demo18,
-        "title": "Profile Page",
+        "title": "Profile/Subscription",
     },
     {
         "image": demo19,
@@ -429,7 +429,7 @@ export const demoImages = [
     },
     {
         "image": demo20,
-        "title": "Payment Procedure for Subscription",
+        "title": "Proceed for Subscription",
     },
     {
         "image": demo21,
@@ -463,16 +463,24 @@ export const footerLinks = [
         title: "Socials",
         link: [
             {
-                title: "Telegram",
+                title: "Telegram CA Inter",
                 link: "https://t.me/vergeca"
+            },
+            {
+                title: "Telegram CA Final",
+                link: "https://t.me/vergecaca"
             },
             {
                 title: "WhatsApp",
                 link: "https://wa.me/message/K7QI5MNW454VH1"
             },
             {
-                title: "LinkedIn",
+                title: "LinkedIn Verge CA",
                 link: "https://www.linkedin.com/in/vergeca"
+            },
+            {
+                title: "LinkedIn Neel",
+                link: "https://www.linkedin.com/in/cacfaneel0409"
             },
             {
                 title: "Youtube",

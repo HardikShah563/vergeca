@@ -52,7 +52,7 @@ export default function Demo() {
                     className="h-full mt-10"
                 />
                 <h1 className="text-lg md:text-2xl font-bold text-center mt-2 leading-normal mb-10 md:mb-20">
-                    Demo interface of our web app
+                    Demo Interface of Web App
                 </h1>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 space-y-14 md:space-y-10">

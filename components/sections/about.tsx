@@ -25,7 +25,7 @@ export function About() {
                         </p>
 
                         <h2 className="sub-heading mt-10">
-                            About The Founder
+                            About the Founder
                         </h2>
 
                         <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">
@@ -45,14 +45,6 @@ export function About() {
                     </div>
 
                     <div className="flex flex-col items-center">
-                        {/* <img
-                            alt="Neel Paresh Doshi Picture"
-                            className="object-cover bg-background"
-                            height="400"
-                            src="/placeholder.svg"
-                            width="300"
-                        /> */}
-                        
                         <Image
                             src={founder}
                             alt="Neel Paresh Doshi Picture"

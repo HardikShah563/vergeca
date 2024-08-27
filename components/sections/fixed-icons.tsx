@@ -8,7 +8,15 @@ import { TelegramIcon } from "../footer/telegram-icon";
 export function FixedIcons() {
     return (
         <>
-            <div className="fixed z-20 -left-[160px] md:-left-[192px] top-[70vh] md:top-[50vh] -rotate-90 flex gap-1">
+            <div className="fixed z-20 -left-[240px] md:-left-[280px] top-[60vh] md:top-[50vh] -rotate-90 flex gap-1">
+                <a
+                    target="_blank"
+                    href={"https://t.me/vergeca"}
+                    className="bg-[#24A1DE] z-20 px-2 md:px-4 py-2 flex items-center gap-2 text-background rounded-md text-xs font-bold md:text-md"
+                >
+                    <TelegramIcon className="text-background w-4 h-4" /> Telegram Final
+                </a>
+
                 <a
                     target="_blank"
                     href={"https://www.linkedin.com/in/cacfaneel0409"}
@@ -30,7 +38,7 @@ export function FixedIcons() {
                     href={"https://t.me/vergeca"}
                     className="bg-[#24A1DE] z-20 px-2 md:px-4 py-2 flex items-center gap-2 text-background rounded-md text-xs font-bold md:text-md"
                 >
-                    <TelegramIcon className="text-background w-4 h-4" /> Telegram
+                    <TelegramIcon className="text-background w-4 h-4" /> Telegram Inter
                 </a>
 
                 <a

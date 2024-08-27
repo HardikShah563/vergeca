@@ -64,16 +64,16 @@ export function InfiniteTestimonialScroll() {
 export function TestimonialCard({ text, avatar, name, designation }: TestimonialCardInterface) {
     return (
         <>
-            <Card className="min-w-[500px]">
+            <Card className="min-w-[500px] bg-muted">
                 <CardContent className="p-6 lg:p-8 space-y-2">
                     <p className="text-sm font-medium uppercase tracking-wide">Review 5 Star</p>
-                    <p className="mt-1.5 font-semibold text-sm">
+                    <p className="mt-1.5 font-semibold">
                         {text}
                     </p>
                 </CardContent>
                 <CardFooter>
                     <div className="flex items-center space-x-3">
-                        <Avatar>
+                        <Avatar className="bg-background">
                             <AvatarFallback>{avatar}</AvatarFallback>
                         </Avatar>
                         <div className="text-sm font-semibold">
