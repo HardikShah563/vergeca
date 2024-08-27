@@ -20,11 +20,133 @@ import {
 
 // importing image
 import mainBanner from "@/public/images/mainBanner.svg";
-import playstore from "@/public/images/playstore.svg";
-import appstore from "@/public/images/appstore.svg";
-import webapp from "@/public/images/webapp.svg";
+import mainBanner2 from "@/public/images/mainBanner2.png";
+import mainBanner3 from "@/public/images/mainBanner3.png";
 import { MoveLeft, MoveRight } from "lucide-react";
 import { Availability } from "./availability";
+
+function Carousel1() {
+    return (
+        <>
+            <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
+                    <div>
+                        <h1 className="heading md:text-6xl lg:text-7xl text-center md:text-left uppercase">
+                            Verge CA
+                        </h1>
+
+                        <h1 className="sub-heading text-center md:text-left">
+                            Revision App for CA Inter & CA Final Students
+                        </h1>
+
+                        <Availability />
+                    </div>
+
+                    <div>
+                        <Image
+                            src={mainBanner}
+                            alt={"main banner"}
+                            className="w-full"
+                            fetchPriority="high"
+                        />
+                    </div>
+                </div>
+            </Card>
+        </>
+    );
+}
+
+function Carouse2() {
+    return (
+        <>
+            <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full p-5">
+                <div className="flex flex-wrap md:flex-nowrap justify-evenly gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
+                    <div>
+                        <h1 className="heading md:text-6xl lg:text-7xl text-center md:text-left uppercase">
+                            Revision/ Test App
+                        </h1>
+
+                        <h1 className="sub-heading text-center md:text-left hidden md:block">
+                            Revision App for CA Inter & CA Final Students
+                        </h1>
+
+                        <Availability />
+                    </div>
+
+                    <Image
+                        src={mainBanner2}
+                        alt={"main banner"}
+                        className="w-fit mx-auto rounded-lg"
+                        fetchPriority="high"
+                    />
+                </div>
+            </Card>
+        </>
+    );
+}
+
+function Carousel3() {
+    return (
+        <>
+            <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
+                    <div>
+                        <h1 className="heading md:text-6xl lg:text-7xl text-center md:text-left uppercase">
+                            Web App
+                        </h1>
+
+                        <h1 className="sub-heading text-center md:text-left">
+                            Get Exclusive Access to the Web App now
+                        </h1>
+                    </div>
+
+                    <div>
+                        <Image
+                            src={mainBanner3}
+                            alt={"main banner 2"}
+                            className="w-full"
+                            fetchPriority="high"
+                        />
+                    </div>
+                </div>
+            </Card>
+        </>
+    );
+}
+
+function Carousel4() {
+    return (
+        <>
+            <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
+                    <div>
+                        <h1 className="heading text-center md:text-left leading-snug">
+                            App Introduction by <br /> CA Hrudyesh Pankhania
+                        </h1>
+
+                        <p className="paragraph text-xl text-muted-foreground text-center md:text-left capitalize">
+                            {/* Learn from professionals about our app */}
+                        </p>
+
+                        <Availability />
+                    </div>
+
+                    <div>
+                        <iframe
+                            className="aspect-video w-full"
+                            src="https://www.youtube.com/embed/V6Q3N2BW1Oc?si=OjWcp_C3DQmjLN91"
+                            title="Verge CA App Introduction by Sir CA Hrudyesh Pankhania"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    </div>
+                </div>
+            </Card>
+        </>
+    );
+}
 
 export function Main() {
     const [api, setApi] = useState<CarouselApi>();
@@ -46,59 +168,19 @@ export function Main() {
             >
                 <CarouselContent>
                     <CarouselItem key={1}>
-                        <Card className="md:h-[60vh] items-center bg-muted m-1">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
-                                <div>
-                                    <h1 className="heading md:text-6xl lg:text-7xl text-center md:text-left uppercase">
-                                        Verge CA
-                                    </h1>
-
-                                    <h1 className="sub-heading text-center md:text-left">
-                                        Revision App for CA Inter & CA Final Students
-                                    </h1>
-
-                                    <Availability />
-                                </div>
-
-                                <div>
-                                    <Image
-                                        src={mainBanner}
-                                        alt={"main banner"}
-                                        className="w-full"
-                                        fetchPriority="high"
-                                    />
-                                </div>
-                            </div>
-                        </Card>
+                        <Carousel1 />
                     </CarouselItem>
+
                     <CarouselItem key={2} className="flex items-center">
-                        <Card className="md:h-[60vh] items-center bg-muted m-1 w-full">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
-                                <div>
-                                    <h1 className="heading text-center md:text-left leading-snug">
-                                        App Introduction by <br /> CA Hrudyesh Pankhania
-                                    </h1>
+                        <Carouse2 />
+                    </CarouselItem>
 
-                                    <p className="paragraph text-xl text-muted-foreground text-center md:text-left capitalize">
-                                        {/* Learn from professionals about our app */}
-                                    </p>
+                    <CarouselItem key={3} className="flex items-center">
+                        <Carousel3 />
+                    </CarouselItem>
 
-                                    <Availability />
-                                </div>
-
-                                <div>
-                                    <iframe
-                                        className="aspect-video w-full"
-                                        src="https://www.youtube.com/embed/V6Q3N2BW1Oc?si=OjWcp_C3DQmjLN91"
-                                        title="Verge CA App Introduction by Sir CA Hrudyesh Pankhania"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerPolicy="strict-origin-when-cross-origin"
-                                        allowFullScreen
-                                    >
-                                    </iframe>
-                                </div>
-                            </div>
-                        </Card>
+                    <CarouselItem key={4} className="flex items-center">
+                        <Carousel4 />
                     </CarouselItem>
                 </CarouselContent>
 

@@ -96,18 +96,54 @@ export function Pricing() {
                             ))}
                         </div>
 
-                        <Card className="p-5 md:px-10">
-                            <h1 className="text-2xl font-bold mb-5">Free Subscription</h1>
-                            <h1 className="text-md md:text-lg text-left md:text-center">
-                                Download the App and Register for free. Get 2 days of free access to any 1 subject
-                            </h1>
+                        <div className="space-y-5">
+                            <Card className="p-5 md:px-10 w-full">
+                                <h1 className="text-2xl font-bold mb-5">Pay Directly</h1>
+                                <ul className="space-y-1">
+                                    <li className="font-bold">
+                                        UPI - 9821342020@hdfcbank
+                                    </li>
+                                    <li>
+                                        Paresh Chandrakant Doshi
+                                    </li>
+                                    <li>
+                                        9870942020 / 9821342020
+                                    </li>
+                                    <li className="font-bold pt-3">
+                                        Pay Lumsum Amount
+                                    </li>
+                                    <li>
+                                        <Button variant={"default"} className="w-fit bg-accent group-hover:bg-foreground gap-2" asChild>
+                                            <Link
+                                                href={"https://razorpay.com/payment-button/pl_NHp37ij40PUezS/view/"}
+                                            >
+                                                Pay with Razorpay
+                                                <Image
+                                                    src={razorpay}
+                                                    alt={"razorpay icon"}
+                                                    className="w-5"
+                                                />
+                                            </Link>
+                                        </Button>
+                                    </li>
+                                </ul>
+                            </Card>
 
-                            <br className="block md:hidden" />
-
-                            <h1 className="text-md md:text-lg text-left md:text-center">
-                                Extend further for 7 days by providing Institute Registration Image on Whatsapp
-                            </h1>
-                        </Card>
+                            <Card className="p-5 md:px-10">
+                                <h1 className="text-2xl font-bold mb-5">Free Subscription</h1>
+                                <ul className="list-disc text-left">
+                                    <li>
+                                        Download the App and Register for free.
+                                    </li>
+                                    <li>
+                                        Get 2 days of free access to any 1 subject.
+                                    </li>
+                                    <li>
+                                        Extend further for 7 days by providing Institute Registration Image on Whatsapp.
+                                    </li>
+                                </ul>
+                            </Card>
+                        </div>
                     </div>
                 </div>
             </section>

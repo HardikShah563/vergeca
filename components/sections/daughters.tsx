@@ -19,24 +19,19 @@ export function Daughters() {
                 </h2>
 
                 <p className="paragraph text-lg md:text-xl text-muted-foreground md:w-[80%] lg:w-[60%] mx-auto text-center">
-                    App Subscription was Free from 13.7.2022 till 18.5.2023 (Exam Nov 2022 & May 2023) to Daughters of India!
+                    App Subscription was Free for Daughters of India from 13.7.2022 till 18.5.2023 <br />(Exam Nov 2022 & May 2023)!
                 </p>
 
                 <p className="paragraph text-lg md:text-xl text-muted-foreground md:w-[80%] lg:w-[60%] mx-auto text-center">
-                    (156 Daughters of India have taken part in the Initiative)
+                    156 Daughters of India have taken part in the Initiative
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 sm:w-[80%] my-10 mx-auto">
-                    <a
-                        target="_blank"
-                        href="http://www.swamisharnanandji.org/"
-                    >
-                        <Image
-                            src={daughter1}
-                            alt={"daughter 1"}
-                            className="w-full h-full"
-                        />
-                    </a>
+                    <Image
+                        src={daughter1}
+                        alt={"daughter 1"}
+                        className="w-full h-full"
+                    />
 
                     <a
                         target="_blank"

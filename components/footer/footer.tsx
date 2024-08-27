@@ -4,9 +4,17 @@ import { SVGProps } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// importing shadcn components
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
+
 // importing image
 import logo from "@/public/images/logo.svg";
-import valueye from "@/public/valueye.png";
+import valueye from "@/public/valueye-straight.png";
 
 // importing data
 import { footerLinks } from "@/lib/data";
@@ -43,7 +51,7 @@ export function Footer() {
 
     return (
         <>
-            <footer className="px-[4vw] lg:px-[8vw] py-5 bg-accent text-background">
+            <footer className="px-[4vw] lg:px-[8vw] py-5 bg-accent text-background text-center md:text-left">
                 <div className="">
                     <Image
                         src={logo}
@@ -95,27 +103,66 @@ export function Footer() {
 
                 <div className="border-t mt-8 pt-8 flex flex-col md:flex-row gap-5 items-center justify-center md:justify-between">
                     <div className="flex flex-wrap items-center gap-3 text-sm font-semibold justify-center">
-                        <div className="text-center">© {new Date().getFullYear()} Verge Infotech. All rights reserved</div>
-                        <div className="hidden md:block text-xl">•</div>
-                        <Link className="hover:text-primary" href={"/privacy-policy"}>Privacy Policy</Link>
-                        <div className="hidden md:block text-xl">•</div>
-                        <Link className="hover:text-primary" href={"/terms-of-use"}>Terms of Use</Link>
+                        <div className="text-center">
+                            © {new Date().getFullYear()} Verge Infotech. All rights reserved
+                        </div>
+                        <div className="hidden md:block text-xl">
+                            •
+                        </div>
+                        <Link className="hover:text-background" href={"/privacy-policy"}>
+                            Privacy Policy
+                        </Link>
+                        {/* <div className="hidden md:block text-xl">•</div>
+                        <Link className="hover:text-background" href={"/terms-of-use"}>Terms of Use</Link> */}
                     </div>
 
-                    <div className="flex gap-5">
-                        <a target="_blank" href="https://www.linkedin.com/in/vergeca">
-                            <LinkedinIcon className="w-6 h-6 fill-background" />
-                        </a>
-                        <a target="_blank" href="https://t.me/vergeca">
-                            <TelegramIcon className="w-6 h-6 fill-background" />
-                        </a>
-                        <a target="_blank" href="https://wa.me/message/K7QI5MNW454VH1">
-                            <WhatsappIcon className="w-6 h-6 fill-background" />
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/cacfaneel0409">
-                            <LinkedinIcon className="w-6 h-6 fill-background" />
-                        </a>
-                    </div>
+                    <TooltipProvider>
+                        <div className="flex gap-10">
+                            <Tooltip delayDuration={0}>
+                                <TooltipTrigger>
+                                    <a target="_blank" href="https://www.linkedin.com/in/vergeca">
+                                        <LinkedinIcon className="w-6 h-6 fill-background" />
+                                    </a>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Verge CA LinkedIn</p>
+                                </TooltipContent>
+                            </Tooltip>
+
+                            <Tooltip delayDuration={0}>
+                                <TooltipTrigger>
+                                    <a target="_blank" href="https://t.me/vergeca">
+                                        <TelegramIcon className="w-6 h-6 fill-background" />
+                                    </a>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Verge CA Telegram Channel</p>
+                                </TooltipContent>
+                            </Tooltip>
+
+                            <Tooltip delayDuration={0}>
+                                <TooltipTrigger>
+                                    <a target="_blank" href="https://wa.me/message/K7QI5MNW454VH1">
+                                        <WhatsappIcon className="w-6 h-6 fill-background" />
+                                    </a>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Verge CA Whatsapp Channel</p>
+                                </TooltipContent>
+                            </Tooltip>
+
+                            <Tooltip delayDuration={0}>
+                                <TooltipTrigger>
+                                    <a target="_blank" href="https://www.linkedin.com/in/cacfaneel0409">
+                                        <LinkedinIcon className="w-6 h-6 fill-background" />
+                                    </a>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Neel LinkedIn</p>
+                                </TooltipContent>
+                            </Tooltip>
+                        </div>
+                    </TooltipProvider>
                 </div>
 
                 <div className="mt-10">
@@ -124,7 +171,7 @@ export function Footer() {
                         <Image
                             src={valueye}
                             alt="Valueye Text logo"
-                            className="w-[200px] mx-auto sm:mx-0 my-5"
+                            className="w-[300px] mx-auto sm:mx-0"
                         />
                     </a>
                 </div>

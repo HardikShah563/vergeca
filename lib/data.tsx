@@ -397,7 +397,7 @@ export const demoImages = [
     },
     {
         "image": demo12,
-        "title": "Select material ICAI Material",
+        "title": "Select multiple ICAI Material",
     },
     {
         "image": demo13,
@@ -446,8 +446,8 @@ export const footerLinks = [
                 link: "/about"
             },
             {
-                title: "Features",
-                link: "/features"
+                title: "Demo",
+                link: "/demo"
             },
             {
                 title: "FAQ",
@@ -460,32 +460,23 @@ export const footerLinks = [
         ]
     },
     {
-        title: "Financials",
+        title: "Socials",
         link: [
             {
-                title: "Pricing",
-                link: "/pricing"
-            },
-            {
-                title: "Demo",
-                link: "/demo"
-            }
-        ]
-    },
-    {
-        title: "Others",
-        link: [
-            {
-                title: "We use Razorpay",
-                link: ""
-            },
-            {
-                title: "Telegram Channel",
+                title: "Telegram",
                 link: "https://t.me/vergeca"
             },
             {
-                title: "WhatsApp Group",
+                title: "WhatsApp",
                 link: "https://wa.me/message/K7QI5MNW454VH1"
+            },
+            {
+                title: "LinkedIn",
+                link: "https://www.linkedin.com/in/vergeca"
+            },
+            {
+                title: "Youtube",
+                link: "https://www.youtube.com/@vergeca"
             },
         ]
     },
