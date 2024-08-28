@@ -36,13 +36,13 @@ export const vision = [
     },
     {
         "image": vision2,
-        "heading": "Provide question filters with references",
-        "paragraph": "Chapters / Topics are filtered further by Categories like Imp/LMR/Similar. Exact Sum Reference of Institute Materials (Book Page No. - Q No. / Year or Multiple Years - Q No.)."
+        "heading": "Question Filter with Exact Reference of ICAI Material",
+        "paragraph": "Chapters / Topics are filtered further by Categories like Imp/LMR/Similar. Exact Reference of ICAI Institute Materials (Book Page No. - Q No. / Year or Multiple Years - Q No.)."
     },
     {
         "image": vision3,
-        "heading": "Smart Revision App & time management",
-        "paragraph": "Do Revision from anywhere in a synchronized & planned way. Do Analysis of Question appeared / repetition in Institute Materials. Revision by Selection of Multiple Books / Materials"
+        "heading": "Smart Revision App & Time Management",
+        "paragraph": "Do Revision from anywhere in a synchronized & planned way. Do Analysis of Question appeared / repetition in Institute Materials. Do Revision by Selection of Multiple Books / Materials."
     },
 ];
 
@@ -50,22 +50,22 @@ export const features = [
     {
         "icon": Highlighter,
         "heading": "Personalized Markers",
-        "paragraph": "Mark doubts, Last Minute Revision markers (LMR). Add personalized notes for each sum. Upload photos of your own solutions."
+        "paragraph": "Mark your own Doubts, Last Day Revision (LDR) and Test Questions. Add your personalized notes for each question and also upload photos of your own solutions."
     },
     {
         "icon": AlarmClockPlus,
         "heading": "Save Time & Money",
-        "paragraph": "No Xerox & No wastage of time in searching & download from search sites.Save Subscription Charges by planning the Revision period."
+        "paragraph": "No Xerox & No wastage of time in searching & download from search sites. Save Subscription Charges by planning the revision period."
     },
     {
         "icon": History,
         "heading": "Up to date Institute Materials",
-        "paragraph": "All Institute Materials are updated on a regular basis. Don't have to wait for Printed Reference Materials."
+        "paragraph": "All Institute Materials are updated on a real-time basis. Don't have to wait for Printed Reference Materials."
     },
     {
         "icon": MonitorSmartphone,
         "heading": "Web & Mobile App",
-        "paragraph": "Student can login either from Web or Mobile using same credentials."
+        "paragraph": "Student can login either from Web App or Mobile App using same credentials, any one at a time."
     },
     {
         "icon": LibraryBig,
@@ -75,7 +75,7 @@ export const features = [
     {
         "icon": Infinity,
         "heading": "Unlimited View",
-        "paragraph": "View as many times as you want during the subscribed period."
+        "paragraph": "View as many times as you want during the subscription period."
     },
 ];
 
@@ -463,29 +463,33 @@ export const footerLinks = [
         title: "Socials",
         link: [
             {
-                title: "Telegram CA Inter",
+                title: "Telegram - CA Inter",
                 link: "https://t.me/vergeca"
             },
             {
-                title: "Telegram CA Final",
+                title: "Telegram - CA Final",
                 link: "https://t.me/vergecaca"
             },
             {
-                title: "WhatsApp Group",
+                title: "WhatsApp - Verge CA",
                 link: "https://wa.me/message/K7QI5MNW454VH1"
             },
             {
-                title: "LinkedIn-Verge CA",
+                title: "WhatsApp - Verge CA Group",
+                link: "https://chat.whatsapp.com/Fuxb3SG4zMjJOXIwRthg81"
+            },
+            {
+                title: "LinkedIn - Verge CA",
                 link: "https://www.linkedin.com/in/vergeca"
             },
             {
-                title: "LinkedIn-Neel Doshi",
+                title: "LinkedIn - Neel Doshi",
                 link: "https://www.linkedin.com/in/cacfaneel0409"
             },
             {
                 title: "Youtube",
                 link: "https://www.youtube.com/@vergeca"
-            },
+            }
         ]
     },
 ];

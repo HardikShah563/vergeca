@@ -125,7 +125,7 @@ export function Footer() {
                                     </a>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>Verge CA Telegram Channel-CA Inter</p>
+                                    <p>Verge CA Telegram Channel - CA Inter</p>
                                 </TooltipContent>
                             </Tooltip>
 
@@ -136,7 +136,7 @@ export function Footer() {
                                     </a>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>Verge CA Telegram Channel-CA Final</p>
+                                    <p>Verge CA Telegram Channel - CA Final</p>
                                 </TooltipContent>
                             </Tooltip>
 
@@ -147,18 +147,18 @@ export function Footer() {
                                     </a>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>Verge CA Whatsapp Channel</p>
+                                    <p>Verge CA Whatsapp Chat</p>
                                 </TooltipContent>
                             </Tooltip>
 
                             <Tooltip delayDuration={0}>
                                 <TooltipTrigger>
-                                    <a target="_blank" href="https://wa.me/9870942020">
+                                    <a target="_blank" href="https://chat.whatsapp.com/Fuxb3SG4zMjJOXIwRthg81">
                                         <WhatsappIcon className="w-6 h-6 fill-background" />
                                     </a>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>Verge CA Whatsapp Chat</p>
+                                    <p>Verge CA Whatsapp Group</p>
                                 </TooltipContent>
                             </Tooltip>
 
@@ -180,7 +180,7 @@ export function Footer() {
                                     </a>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>Neel LinkedIn</p>
+                                    <p>Neel Doshi LinkedIn</p>
                                 </TooltipContent>
                             </Tooltip>
                         </div>

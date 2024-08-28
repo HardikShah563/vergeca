@@ -70,7 +70,7 @@ function Carousel2() {
                         </h1>
 
                         <h1 className="sub-heading text-center md:text-left">
-                            Get Exclusive Access to the Web App
+                            Get Access to Web App
                         </h1>
 
                         <div className="space-y-2 text-center md:text-left">
@@ -121,7 +121,7 @@ function Carousel3() {
                     <Image
                         src={mainBanner2}
                         alt={"main banner"}
-                        className="w-fit mx-auto rounded-lg"
+                        className="md:w-[300px] mx-auto rounded-lg"
                         fetchPriority="high"
                     />
                 </div>

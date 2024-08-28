@@ -8,8 +8,8 @@ export function Icai() {
     return (
         <>
             <div className="section">
-                <h2 className="heading mb-10 text-center capitalize">
-                    Coverage of  ICAI - Institute Materials in Verge CA App
+                <h2 className="heading mb-10 text-center">
+                    Coverage of ICAI - Institute Materials in Verge CA App
                 </h2>
                 <Image
                     src={ICAI}

@@ -67,7 +67,7 @@ export function TestimonialCard({ text, avatar, name, designation }: Testimonial
             <Card className="min-w-[500px] bg-muted">
                 <CardContent className="p-6 lg:p-8 space-y-2">
                     {/* <p className="text-sm font-medium uppercase tracking-wide">Review 5 Star</p> */}
-                    <p className="mt-1.5 font-semibold">
+                    <p className="mt-1.5 font-semibold font-sans">
                         {text}
                     </p>
                 </CardContent>
@@ -78,7 +78,7 @@ export function TestimonialCard({ text, avatar, name, designation }: Testimonial
                         </Avatar>
                         <div className="text-sm font-semibold">
                             {name}
-                            <div className="text-xs font-normal text-muted-foreground">{designation}</div>
+                            <div className="text-xs font-semibold">{designation}</div>
                         </div>
                     </div>
                 </CardFooter>
@@ -91,9 +91,9 @@ export function Testimonials() {
     return (
         <section className={"py-32"}>
             <div className="px-[5vw] md:px-[10vw] pb-10 container flex flex-col-reverse md:flex-row justify-between items-center gap-4 lg:grid-cols-2 xl:gap-10">
-                <div className="space-y-4 mx-auto md:mx-0 md:w-[70%] lg:w-[50%]">
+                <div className="space-y-4 mx-auto md:mx-0 md:w-[70%]">
                     <h1 className="heading text-center md:text-left">
-                        Loved and Trusted by Students.
+                        Loved & Trusted by Students
                     </h1>
                     <h2 className="sub-heading">
                         (Ratings 4.8 by more than 220 reviews)
