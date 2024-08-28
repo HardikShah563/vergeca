@@ -11,7 +11,7 @@ export function Availability() {
         <>
             <div className="space-y-5 text-center md:text-left">
                 <div className="space-y-2">
-                    <h1 className="text-md font-semibold mb-1">Now Available At: </h1>
+                    <h1 className="text-md font-semibold mb-1">Now Available on: </h1>
                     <div className="flex gap-3 justify-center md:justify-start">
                         <a target="_blank" href={"https://play.google.com/store/apps/details?id=com.vergeca&hl=en_IN"}>
                             <Image

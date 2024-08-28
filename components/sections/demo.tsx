@@ -11,7 +11,7 @@ import demoBanner from "@/public/images/demoBanner.svg";
 export function Demo() {
     return (
         <>
-            <div className="section pt-20 grid grid-cols-1 md:grid-cols-2 items-center bg-muted">
+            <div className="section pt-20 grid grid-cols-1 md:grid-cols-2 items-center">
                 <div className="space-y-10">
                     <h1 className="heading">
                         View Demo

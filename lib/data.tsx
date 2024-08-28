@@ -13,8 +13,17 @@ export const links = [
         link: "/about",
         label: "About"
     }, {
-        link: "/faq",
-        label: "FAQ"
+        link: "#vision",
+        label: "Vision"
+    }, {
+        link: "#testimonials",
+        label: "Testimonials"
+    }, {
+        link: "#pricing",
+        label: "Subscription"
+    }, {
+        link: "#daughters",
+        label: "Daughters of India"
     }, {
         link: "/demo",
         label: "Demo"
@@ -36,7 +45,7 @@ export const vision = [
     },
     {
         "image": vision2,
-        "heading": "Question Filter with Exact Reference of ICAI Material",
+        "heading": "Question Filter with Exact Reference of ICAI Materials",
         "paragraph": "Chapters / Topics are filtered further by Categories like Imp/LMR/Similar. Exact Reference of ICAI Institute Materials (Book Page No. - Q No. / Year or Multiple Years - Q No.)."
     },
     {
@@ -59,7 +68,7 @@ export const features = [
     },
     {
         "icon": History,
-        "heading": "Up to date Institute Materials",
+        "heading": "Updated Institute Materials",
         "paragraph": "All Institute Materials are updated on a real-time basis. Don't have to wait for Printed Reference Materials."
     },
     {

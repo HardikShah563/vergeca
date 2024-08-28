@@ -14,7 +14,7 @@ export function Icai() {
                 <Image
                     src={ICAI}
                     alt="icai"
-                    className="mx-auto"
+                    className="mx-auto rounded-lg"
                 />
             </div>
         </>

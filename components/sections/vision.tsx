@@ -21,7 +21,7 @@ export function VisionCard(props: VisionCardInterface) {
             <h3 className="mt-4 text-2xl font-semibold my-5">
                 {props.heading}
             </h3>
-            <p className="mt-2 text-muted-foreground">
+            <p className="mt-2 text-muted-foreground text-justify">
                 {props.paragraph}
             </p>
         </div>

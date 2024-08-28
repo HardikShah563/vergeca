@@ -7,7 +7,7 @@ export function FeatureCard(props: { icon: any, heading: string, paragraph: stri
             <h3 className="mt-4 text-lg font-medium">
                 {props.heading}
             </h3>
-            <p className="mt-2 text-muted-foreground">
+            <p className="mt-2 text-muted-foreground text-justify">
                 {props.paragraph}
             </p>
         </div>

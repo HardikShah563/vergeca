@@ -61,7 +61,7 @@
 
 @layer base {
     * {
-        @apply border-border;
+        @apply border-border font-sans scroll-smooth;
     }
 
     body {
@@ -86,9 +86,5 @@
 
     .paragraph {
         @apply leading-7 [&:not(:first-child)]:mt-6 text-lg;
-    }
-
-    .carousel-card {
-        
     }
 }

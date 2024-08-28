@@ -33,6 +33,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id="main"
                 >
                     <Main />
                 </section>
@@ -42,6 +43,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id="about"
                 >
                     <About />
                 </section>
@@ -51,6 +53,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id="vision"
                 >
                     <Vision />
                 </section>
@@ -60,6 +63,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id="features"
                 >
                     <Features />
                 </section>
@@ -69,6 +73,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id="icai"
                 >
                     <Icai />
                 </section>
@@ -78,6 +83,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id="testimonials"
                 >
                     <Testimonials />
                 </section>
@@ -87,6 +93,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id="pricing"
                 >
                     <Pricing />
                 </section>
@@ -96,15 +103,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
-                >
-                    <Introduction />
-                </section>
-
-                <section
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
+                    id="demo"
                 >
                     <Demo />
                 </section>
@@ -114,6 +113,17 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id=""
+                >
+                    <Introduction />
+                </section>
+
+                <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                    id="analysis"
                 >
                     <Analysis />
                 </section>
@@ -133,6 +143,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    id="daughters"
                 >
                     <Daughters />
                 </section>

@@ -112,8 +112,8 @@ export function Footer() {
                         <Link className="hover:text-background" href={"/privacy-policy"}>
                             Privacy Policy
                         </Link>
-                        {/* <div className="hidden md:block text-xl">•</div>
-                        <Link className="hover:text-background" href={"/terms-of-use"}>Terms of Use</Link> */}
+                        <div className="hidden md:block text-xl">•</div>
+                        <Link className="hover:text-background" href={"/terms-of-use"}>Terms of Use</Link>
                     </div>
 
                     <TooltipProvider>
