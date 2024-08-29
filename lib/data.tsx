@@ -22,11 +22,11 @@ export const links = [
         link: "#pricing",
         label: "Subscription"
     }, {
-        link: "#daughters",
-        label: "Daughters of India"
-    }, {
         link: "/demo",
         label: "Demo"
+    }, {
+        link: "#daughters",
+        label: "Daughters of India"
     }, {
         link: "/contact-us",
         label: "Contact"
@@ -50,7 +50,7 @@ export const vision = [
     },
     {
         "image": vision3,
-        "heading": "Smart Revision App & Time Management",
+        "heading": "Smart Revision App & Time Management App",
         "paragraph": "Do Revision from anywhere in a synchronized & planned way. Do Analysis of Question appeared / repetition in Institute Materials. Do Revision by Selection of Multiple Books / Materials."
     },
 ];

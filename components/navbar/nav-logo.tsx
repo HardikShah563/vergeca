@@ -11,7 +11,7 @@ export function NavLogo() {
                 <Image
                     src={logo}
                     alt="logo"
-                    className="w-[240px] md:w-[200px]"
+                    className="w-[140px] md:w-[200px]"
                 />
             </Link>
         </>

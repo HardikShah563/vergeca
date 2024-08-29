@@ -5,6 +5,9 @@ import Link from "next/link";
 // importing shadcn components
 import { Button } from "@/components/ui/button";
 
+// importing components
+import { Support } from "@/components/sections/support";
+
 // importing image
 import founder from "@/public/images/neel.png";
 
@@ -19,6 +22,8 @@ export default function page() {
                     <ArrowLeft className="w-4 h-4" /> Back
                 </Link>
             </Button>
+
+            <Support />
 
             <div className="section mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">

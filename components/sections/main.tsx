@@ -70,7 +70,7 @@ function Carousel2() {
                         </h1>
 
                         <h1 className="sub-heading text-center md:text-left">
-                            Get Access to Web App
+                            Now Available on:
                         </h1>
 
                         <div className="space-y-2 text-center md:text-left">

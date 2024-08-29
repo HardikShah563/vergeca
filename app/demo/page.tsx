@@ -5,6 +5,9 @@ import Link from "next/link";
 // importing shadcn components
 import { Button } from "@/components/ui/button";
 
+// importing components
+import { Support } from "@/components/sections/support";
+
 // importing icons
 import { ArrowLeft } from "lucide-react";
 
@@ -22,6 +25,8 @@ export default function Demo() {
                     <ArrowLeft className="w-4 h-4" /> Back
                 </Link>
             </Button>
+
+            <Support />
 
             <div className="section md:mt-10">
                 <h2 className="heading mb-10 text-center">

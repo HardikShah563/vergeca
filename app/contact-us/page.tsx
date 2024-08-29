@@ -9,6 +9,7 @@ import { ArrowLeft } from "lucide-react";
 
 // importing components
 import { ContactUs } from "@/components/sections/contact-us";
+import { Support } from "@/components/sections/support";
 
 export default function page() {
     return (
@@ -18,6 +19,8 @@ export default function page() {
                     <ArrowLeft className="w-4 h-4" /> Back
                 </Link>
             </Button>
+
+            <Support />
 
             <div className="pt-10">
                 <ContactUs />

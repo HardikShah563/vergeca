@@ -62,13 +62,13 @@ export function Footer() {
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-10 md:gap-2 lg:gap-10">
                     <div className="space-y-5 md:col-span-2">
-                        <div>
+                        <div className="text-lg font-bold">
                             Revision App for CA Inter & CA Final Students
                         </div>
 
                         <ul>
                             <li>
-                                <Mail className="inline-block w-5 h-5 mr-1" />
+                                <Mail className="inline-block w-5 h-5 mr-2" />
                                 <a target="_blank" href="mailto:vergecainfo@gmail.com">
                                     vergecainfo@gmail.com
                                 </a>
@@ -80,7 +80,7 @@ export function Footer() {
 
                     {footerLinks.map((linkSet) => (
                         <div key={linkSet.title}>
-                            <h5 className="text-sm font-bold mb-4">{linkSet.title}</h5>
+                            <h5 className="text-lg font-bold mb-4">{linkSet.title}</h5>
                             <ul className="space-y-2">
                                 {linkSet.link.map((link) => (
                                     <li key={link.link}
