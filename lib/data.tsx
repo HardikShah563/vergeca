@@ -17,9 +17,12 @@ export const links = [
         label: "About"
     }, {
         link: "/vision",
-        label: "Vision"
+        label: "Features"
     }, {
-        link: "/#testimonials",
+        link: "/coverage",
+        label: "Coverage"
+    }, {
+        link: "/testimonials",
         label: "Testimonials"
     }, {
         link: "/#pricing",
@@ -28,7 +31,7 @@ export const links = [
         link: "/demo",
         label: "Demo"
     }, {
-        link: "/#daughters",
+        link: "/daughters-of-india",
         label: "Daughters of India"
     }, {
         link: "/contact-us",

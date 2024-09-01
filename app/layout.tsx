@@ -7,6 +7,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar/navbar";
 import { Footer } from "@/components/footer/footer";
 import { Toaster } from "@/components/ui/toaster";
+import { Support } from "@/components/sections/support";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={inter.className}>
                 <Navbar />
+                <Support />
                 <div className="min-h-[50vh]">
                     {children}
                 </div>

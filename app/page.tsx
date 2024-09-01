@@ -14,7 +14,6 @@ import { Analysis } from "@/components/sections/analysis";
 import { Faq } from "@/components/sections/faq";
 import { ContactUs } from "@/components/sections/contact-us";
 import { AOS_Component } from "@/components/aos/aos";
-import { Support } from "@/components/sections/support";
 
 export default function Home() {
     const aosDelay = 200;
@@ -26,8 +25,6 @@ export default function Home() {
                 <AOS_Component />
 
                 <FixedIcons />
-
-                <Support />
 
                 <section
                     data-aos="fade-up"

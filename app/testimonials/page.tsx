@@ -4,13 +4,17 @@ import Link from "next/link";
 // importing shadcn components
 import { Button } from "@/components/ui/button";
 
+// importing components
+import { Testimonials } from "@/components/sections/testimonials";
+
 // importing icons
 import { ArrowLeft } from "lucide-react";
 
-// importing components
-import { ContactUs } from "@/components/sections/contact-us";
 
 export default function page() {
+    const aosDelay = 200;
+    const aosDuration = 600;
+
     return (
         <>
             <Button className="sticky left-3 top-24 gap-2 pl-2.5 bg-accent" asChild>
@@ -19,9 +23,15 @@ export default function page() {
                 </Link>
             </Button>
 
-            <div className="pt-10">
-                <ContactUs />
-            </div>
+            <section
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-delay={aosDelay}
+                data-aos-duration={aosDuration}
+                id="testimonials"
+            >
+                <Testimonials />
+            </section>
         </>
     );
 };

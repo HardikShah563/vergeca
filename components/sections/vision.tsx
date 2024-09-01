@@ -33,11 +33,11 @@ export function Vision() {
         <>
             <section id={"vision"} className={"section"}>
                 <div className="space-y-2 mb-20">
-                    <p className="max-w-[900px] text-muted-foreground font-semibold md:text-md text-center md:text-left">
+                    {/* <p className="max-w-[900px] text-muted-foreground font-semibold md:text-md text-center md:text-left">
                         WHY CHOOSE US
-                    </p>
-                    <h1 className="heading text-center md:text-left">
-                        Our Vision
+                    </p> */}
+                    <h1 className="heading text-center pb-5">
+                        App Features
                     </h1>
                 </div>
 
