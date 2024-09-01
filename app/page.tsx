@@ -108,12 +108,12 @@ export default function Home() {
                     <Analysis />
                 </section>
 
+                <div id="pricing"></div>
                 <section
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
-                    id="pricing"
                 >
                     <Pricing />
                 </section>

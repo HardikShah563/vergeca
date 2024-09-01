@@ -22,14 +22,15 @@ export const links = [
         link: "/coverage",
         label: "Coverage"
     }, {
-        link: "/testimonials",
-        label: "Testimonials"
+
+        link: "/demo",
+        label: "Demo"
     }, {
         link: "/#pricing",
         label: "Subscription"
     }, {
-        link: "/demo",
-        label: "Demo"
+        link: "/testimonials",
+        label: "Testimonials"
     }, {
         link: "/daughters-of-india",
         label: "Daughters of India"
