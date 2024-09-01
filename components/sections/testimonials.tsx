@@ -64,7 +64,7 @@ export function InfiniteTestimonialScroll() {
 export function TestimonialCard({ text, avatar, name, designation }: TestimonialCardInterface) {
     return (
         <>
-            <Card className="min-w-[500px] bg-muted">
+            <Card className="min-w-[500px]">
                 <CardContent className="p-6 lg:p-8 space-y-2">
                     {/* <p className="text-sm font-medium uppercase tracking-wide">Review 5 Star</p> */}
                     <p className="mt-1.5 font-semibold font-sans text-justify">

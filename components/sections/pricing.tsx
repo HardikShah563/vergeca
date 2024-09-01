@@ -70,7 +70,7 @@ export function PricingCard(props: PriceCardInterface) {
 export function Pricing() {
     return (
         <>
-            <section id={"pricing"} className={"px-[5vw] md:px-[10vw] py-20 md:py-28 lg:py-32 bg-muted"}>
+            <section id={"pricing"} className={"px-[5vw] md:px-[10vw] py-20 md:py-28 lg:py-32"}>
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">

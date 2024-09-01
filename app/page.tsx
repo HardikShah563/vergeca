@@ -81,26 +81,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
-                    id="testimonials"
-                >
-                    <Testimonials />
-                </section>
-
-                <section
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
-                    id="pricing"
-                >
-                    <Pricing />
-                </section>
-
-                <section
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-delay={aosDelay}
-                    data-aos-duration={aosDuration}
+                    className="bg-muted"
                     id="demo"
                 >
                     <Demo />
@@ -121,6 +102,7 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    className="bg-muted"
                     id="analysis"
                 >
                     <Analysis />
@@ -131,9 +113,9 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
-                    className="bg-muted"
+                    id="pricing"
                 >
-                    <Faq />
+                    <Pricing />
                 </section>
 
                 <section
@@ -141,6 +123,28 @@ export default function Home() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay={aosDelay}
                     data-aos-duration={aosDuration}
+                    className="bg-muted"
+                    id="testimonials"
+                >
+                    <Testimonials />
+                </section>
+
+                {/* <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                    className="bg-muted"
+                >
+                    <Faq />
+                </section> */}
+
+                <section
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay={aosDelay}
+                    data-aos-duration={aosDuration}
+                    className=""
                     id="daughters"
                 >
                     <Daughters />

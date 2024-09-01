@@ -1,7 +1,7 @@
 export function Introduction() {
     return (
         <>
-            <div className="section my-0 py-10 md:py-20 lg:py-36 bg-muted">
+            <div className="section my-0 py-10 md:py-20 lg:py-36">
                 <div className="pb-10">
                     <h1 className="heading text-center">
                         App Introduction by CA Hrudyesh Pankhania
