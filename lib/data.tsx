@@ -34,7 +34,7 @@ export const links = [
         link: "/daughters-of-india",
         label: "Daughters of India"
     }, {
-        link: "/contact",
+        link: "/contact-us",
         label: "Contact"
     }
 ];

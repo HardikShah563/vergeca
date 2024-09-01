@@ -1,15 +1,6 @@
-// importing from next
-import Image from "next/image";
-import Link from "next/link";
-
 // importing components
 import { Pricing } from "@/components/sections/pricing";
-
-// importing shadcn components
-import { Button } from "@/components/ui/button";
-
-// importing icons
-import { ArrowLeft } from "lucide-react";
+import { BackButton } from "@/components/sections/back-button";
 
 export default function page() {
     const aosDelay = 200;
@@ -17,11 +8,7 @@ export default function page() {
 
     return (
         <>
-            <Button className="sticky left-3 top-24 gap-2 pl-2.5 bg-accent" asChild>
-                <Link href={"/"}>
-                    <ArrowLeft className="w-4 h-4" /> Back
-                </Link>
-            </Button>
+            <BackButton />
 
             <section
                 data-aos="fade-up"

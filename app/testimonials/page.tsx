@@ -1,14 +1,6 @@
-// importing from next
-import Link from "next/link";
-
-// importing shadcn components
-import { Button } from "@/components/ui/button";
-
 // importing components
 import { Testimonials } from "@/components/sections/testimonials";
-
-// importing icons
-import { ArrowLeft } from "lucide-react";
+import { BackButton } from "@/components/sections/back-button";
 
 
 export default function page() {
@@ -17,11 +9,7 @@ export default function page() {
 
     return (
         <>
-            <Button className="sticky left-3 top-24 gap-2 pl-2.5 bg-accent" asChild>
-                <Link href={"/"}>
-                    <ArrowLeft className="w-4 h-4" /> Back
-                </Link>
-            </Button>
+            <BackButton />
 
             <section
                 data-aos="fade-up"

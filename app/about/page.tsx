@@ -1,24 +1,15 @@
 // importing from next
 import Image from "next/image";
-import Link from "next/link";
-
-// importing shadcn components
-import { Button } from "@/components/ui/button";
 
 // importing image
 import founder from "@/public/images/neel.png";
 
-// importing icons
-import { ArrowLeft } from "lucide-react";
+import { BackButton } from "@/components/sections/back-button";
 
 export default function page() {
     return (
         <>
-            <Button className="sticky left-3 top-24 gap-2 pl-2.5 bg-accent" asChild>
-                <Link href={"/"}>
-                    <ArrowLeft className="w-4 h-4" /> Back
-                </Link>
-            </Button>
+            <BackButton />
 
             <div className="section mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">

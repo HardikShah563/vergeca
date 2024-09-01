@@ -1,27 +1,17 @@
 // importing from next
 import Image from "next/image";
-import Link from "next/link";
-
-// importing shadcn components
-import { Button } from "@/components/ui/button";
-
-// importing icons
-import { ArrowLeft } from "lucide-react";
 
 // importing images
 import web1 from "@/public/images/web1.png";
 
 // importing data
 import { demoImages } from "@/lib/data";
+import { BackButton } from "@/components/sections/back-button";
 
 export default function Demo() {
     return (
         <>
-            <Button className="sticky left-3 top-24 gap-2 pl-2.5 bg-accent" asChild>
-                <Link href={"/"}>
-                    <ArrowLeft className="w-4 h-4" /> Back
-                </Link>
-            </Button>
+            <BackButton />
 
             <div className="section md:mt-10">
                 <h2 className="heading mb-10 text-center">
