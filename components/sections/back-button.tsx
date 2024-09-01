@@ -12,7 +12,7 @@ export function BackButton() {
         <>
             <Button className="sticky left-3 top-24 gap-2 pl-2.5 bg-accent" asChild>
                 <Link href={"/"}>
-                    <ArrowLeft className="w-4 h-4" /> Back
+                    <ArrowLeft className="w-4 h-4" />
                 </Link>
             </Button>
         </>
