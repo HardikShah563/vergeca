@@ -121,7 +121,7 @@ function Carousel3() {
                     <Image
                         src={mainBanner2}
                         alt={"main banner"}
-                        className="md:w-[350px] mx-auto rounded-lg"
+                        className="md:w-[450px] mx-auto rounded-lg"
                         fetchPriority="high"
                     />
                 </div>

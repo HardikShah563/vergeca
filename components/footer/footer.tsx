@@ -63,7 +63,7 @@ export function Footer() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-10 md:gap-2 lg:gap-10">
-                    <div className="space-y-5 md:col-span-2">
+                    <div className="space-y-5 md:col-span-3">
                         <div className="text-lg font-bold">
                             Revision App for CA Inter & CA Final Students
                         </div>

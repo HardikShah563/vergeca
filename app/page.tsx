@@ -108,7 +108,6 @@ export default function Home() {
                     <Analysis />
                 </section>
 
-                <div id="pricing"></div>
                 <section
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"

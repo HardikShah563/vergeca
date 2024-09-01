@@ -25,7 +25,7 @@ export function About() {
                         </p>
 
                         <h2 className="sub-heading mt-10">
-                            About the Founder
+                            About the Co-Founder
                         </h2>
 
                         <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">

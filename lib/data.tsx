@@ -14,19 +14,18 @@ export const links = [
         label: "Home"
     }, {
         link: "/about",
-        label: "About"
+        label: "About Us"
     }, {
-        link: "/vision",
+        link: "/features",
         label: "Features"
     }, {
         link: "/coverage",
         label: "Coverage"
     }, {
-
         link: "/demo",
         label: "Demo"
     }, {
-        link: "/#pricing",
+        link: "/subscription",
         label: "Subscription"
     }, {
         link: "/testimonials",
@@ -34,9 +33,6 @@ export const links = [
     }, {
         link: "/daughters-of-india",
         label: "Daughters of India"
-    }, {
-        link: "/contact-us",
-        label: "Contact"
     }
 ];
 
@@ -458,21 +454,37 @@ export const footerLinks = [
         title: "Verge CA",
         link: [
             {
-                title: "About Us",
+                title: "About ",
                 link: "/about"
+            },
+            {
+                title: "Features",
+                link: "/features"
+            },
+            {
+                title: "Coverage",
+                link: "/coverage"
             },
             {
                 title: "Demo",
                 link: "/demo"
             },
             {
-                title: "FAQ",
-                link: "/faq"
+                title: "Subscription",
+                link: "/subscription"
             },
-            // {
-            //     title: "Downloads",
-            //     link: "/downloads"
-            // },
+            {
+                title: "Testimonials",
+                link: "/testimonials"
+            },
+            {
+                title: "Daughters of India",
+                link: "/daughters-of-india"
+            },
+            {
+                title: "Contact",
+                link: "/contact"
+            },
         ]
     },
     {
