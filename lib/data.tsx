@@ -33,6 +33,9 @@ export const links = [
     }, {
         link: "/daughters-of-india",
         label: "Daughters of India"
+    }, {
+        link: "/contact",
+        label: "Contact"
     }
 ];
 
@@ -454,7 +457,7 @@ export const footerLinks = [
         title: "Verge CA",
         link: [
             {
-                title: "About ",
+                title: "About Us",
                 link: "/about"
             },
             {
@@ -480,10 +483,6 @@ export const footerLinks = [
             {
                 title: "Daughters of India",
                 link: "/daughters-of-india"
-            },
-            {
-                title: "Contact",
-                link: "/contact"
             },
         ]
     },
