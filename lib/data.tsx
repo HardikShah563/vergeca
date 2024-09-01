@@ -10,22 +10,25 @@ import {
 
 export const links = [
     {
+        link: "/",
+        label: "Home"
+    }, {
         link: "/about",
         label: "About"
     }, {
-        link: "#vision",
+        link: "/vision",
         label: "Vision"
     }, {
-        link: "#testimonials",
+        link: "/#testimonials",
         label: "Testimonials"
     }, {
-        link: "#pricing",
+        link: "/#pricing",
         label: "Subscription"
     }, {
         link: "/demo",
         label: "Demo"
     }, {
-        link: "#daughters",
+        link: "/#daughters",
         label: "Daughters of India"
     }, {
         link: "/contact-us",
@@ -44,14 +47,14 @@ export const vision = [
         "paragraph": "All Materials of Institute in one place. Compilation of New Syllabus & Old Syllabus. Don't have to rely on any publication or printed reference materials."
     },
     {
+        "image": vision3,
+        "heading": "Smart Revision & Time Management App",
+        "paragraph": "Do Revision from anywhere in a synchronized & planned way. Do Analysis of Question appeared/ repetition in Institute Materials. Do Revision by Selection of Multiple Books / Materials."
+    },
+    {
         "image": vision2,
         "heading": "Question Filter with Exact Reference of ICAI Materials",
         "paragraph": "Chapters / Topics are filtered further by Categories like Imp/LMR/Similar. Exact Reference of ICAI Institute Materials (Book Page No. - Q No. / Year or Multiple Years - Q No.)."
-    },
-    {
-        "image": vision3,
-        "heading": "Smart Revision App & Time Management App",
-        "paragraph": "Do Revision from anywhere in a synchronized & planned way. Do Analysis of Question appeared / repetition in Institute Materials. Do Revision by Selection of Multiple Books / Materials."
     },
 ];
 

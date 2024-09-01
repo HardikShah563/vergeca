@@ -70,11 +70,11 @@ function Carousel2() {
                         </h1>
 
                         <h1 className="sub-heading text-center md:text-left">
-                            Now Available on:
+                            Get Access to Web App
                         </h1>
 
                         <div className="space-y-2 text-center md:text-left">
-                            <h1 className="text-md font-semibold mb-1">Available at: </h1>
+                            <h1 className="text-md font-semibold mb-1">Now Available on: </h1>
                             <a target="_blank" href={"https://vergeca.in/web/login"} className="flex gap-3 justify-center md:justify-start">
                                 <Image
                                     src={webapp}
@@ -168,7 +168,7 @@ export function Main() {
     const [api, setApi] = useState<CarouselApi>();
 
     const plugin = useRef(
-        Autoplay({ delay: 5000 })
+        Autoplay({ delay: 7000 })
     );
 
     return (

@@ -96,13 +96,13 @@ export function Testimonials() {
                         Loved & Trusted by Students
                     </h1>
                     <h2 className="sub-heading">
-                        (Ratings 4.8 by more than 220 reviews)
+                        (Ratings 4.8 by more than 224 reviews)
                     </h2>
                     {/* <span className="flex gap-1 heading text-center md:text-left">
                         (4.8/5 <Star className="w-12 h-12 fill-yellow-300" />)
                     </span> */}
                     <p className="paragraph text-xl text-muted-foreground md:w-[90%] text-center md:text-left">
-                        See what students are saying about their experience with our platform.
+                        See what students are saying about their experience with our platform!
                     </p>
                 </div>
 

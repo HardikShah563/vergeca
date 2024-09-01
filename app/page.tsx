@@ -27,7 +27,7 @@ export default function Home() {
 
                 <FixedIcons />
 
-                {/* <Support /> */}
+                <Support />
 
                 <section
                     data-aos="fade-up"

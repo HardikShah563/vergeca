@@ -18,6 +18,8 @@ import valueye from "@/public/valueye-straight.png";
 
 // importing data
 import { footerLinks } from "@/lib/data";
+// import {terms} from "/TermsOfService.pdf";
+
 // imporing icons
 import {
     Mail
@@ -113,7 +115,7 @@ export function Footer() {
                             Privacy Policy
                         </Link>
                         <div className="hidden md:block text-xl">•</div>
-                        <Link className="hover:text-background" href={"/terms-of-use"}>Terms of Use</Link>
+                        <a className="hover:text-background">Terms of Use</a>
                     </div>
 
                     <TooltipProvider>

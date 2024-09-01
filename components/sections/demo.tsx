@@ -18,7 +18,7 @@ export function Demo() {
                     </h1>
 
                     <p className="paragraph">
-                        The app is available in the form of Web App as well as an Android app. 
+                        The app is available in the form of Web App as well as an Android app. <br />
                         View App Introduction and Screenshots of the Application.
                     </p>
 
