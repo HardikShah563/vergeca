@@ -26,7 +26,7 @@ export default function page() {
                         </p>
 
                         <h2 className="sub-heading mt-10">
-                            About the Founder
+                            About Co-Founder
                         </h2>
 
                         <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">
@@ -35,7 +35,7 @@ export default function page() {
                             who achieved success in the CA Final exams on his first attempt in November 2023.
                             Additionally, completed all 3 levels of the
                             &nbsp;<span className="font-bold text-foreground">CFA (USA)</span>&nbsp;
-                            programme in Feb 2023, with the Charter Pending. Also completed both levels of 
+                            programme in Feb 2023, with the Charter Pending. Also completed both levels of
                             &nbsp;<span className="font-bold text-foreground">CIPM (CFA USA)</span>&nbsp;
                             program in Feb 2024.
                             Neel has played a pivotal role in developing and curating online content and practice materials to aid CA Aspirants in their journey.

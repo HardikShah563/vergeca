@@ -25,7 +25,7 @@ export function About() {
                         </p>
 
                         <h2 className="sub-heading mt-10">
-                            About the Co-Founder
+                            About Co-Founder
                         </h2>
 
                         <p className="mt-3 text-muted-foreground text-justify text-sm md:text-lg">
@@ -65,7 +65,10 @@ export function About() {
                             Chartered Accountant
                         </p>
                         <p className="mt-2 text-muted-foreground font-medium">
-                            CFA (USA) & CIPM (CFA USA)
+                            CFA (USA) All 3 Levels Cleared
+                        </p>
+                        <p className="mt-2 text-muted-foreground font-medium">
+                            CIPM (CFA USA) Both Levels Cleared
                         </p>
                     </div>
                 </div>

@@ -64,7 +64,7 @@ export function Demo() {
 
             <div className="section pt-0 md:pt-20 grid grid-cols-1 md:grid-cols-2 items-center mx-auto">
                 <Carousel
-                    className="w-[95vw] md:w-[80vw]"
+                    className="w-[95vw] md:w-[80vw] overflow-hidden"
                     plugins={[plugin.current]}
                     setApi={setApi}
                     opts={{
