@@ -67,8 +67,6 @@ export default function page() {
                 </div>
 
                 <div className="text-lg text-justify text-muted-foreground mt-10">
-                    Co-Founder Neel Paresh Doshi, a Chartered Accountant, has achieved success in the CA Final exams on his first attempt in November 2023. Additionally, completed all 3 levels of the CFA (USA) program in Feb 2023, with the Charter Pending. Also completed both levels of CIPM (CFA USA) program in Feb 2024.
-                    <br /><br />
                     Founded and led Verge CA App, a specialized application tailored to the needs of aspiring Chartered Accountants, focusing on the provision of in-depth subject knowledge & technical guidance of highest educational quality, since November, 2020. Developed and curated online content and practice materials to aid CA Aspirants in their journey.
                     <br /><br />
                     Verge CA App is Revision App for CA Final & CA Inter Students and is available on both Web App & Mobile App. CA Inter (Subjects: Advanced Accounting, Costing, Audit, Financial Management & Strategic Management) & CA Final (Subjects: Financial Reporting, Advanced Financial Management & Auditing).
