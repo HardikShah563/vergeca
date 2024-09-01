@@ -21,7 +21,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="page max-w-[1640px] mx-auto">
+            <div className="page max-w-[1640px] mx-auto overflow-hidden">
                 <AOS_Component />
 
                 <FixedIcons />

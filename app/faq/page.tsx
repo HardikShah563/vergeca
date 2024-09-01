@@ -7,7 +7,7 @@ export default function page() {
         <>
             <BackButton />
 
-            <div className="pt-10">
+            <div className="pt-10 overflow-hidden">
                 <Faq />
             </div>
         </>

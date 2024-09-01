@@ -13,7 +13,7 @@ export default function Demo() {
         <>
             <BackButton />
 
-            <div className="section md:mt-10">
+            <div className="section md:mt-10 overflow-hidden">
                 <h2 className="heading mb-10 text-center">
                     Demo of the App
                 </h2>

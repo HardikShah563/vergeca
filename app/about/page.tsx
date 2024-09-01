@@ -11,7 +11,7 @@ export default function page() {
         <>
             <BackButton />
 
-            <div className="section mt-10">
+            <div className="section mt-10 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
                     <div>
                         <h2 className="heading mb-10">

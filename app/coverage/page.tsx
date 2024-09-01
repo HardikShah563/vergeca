@@ -12,11 +12,14 @@ export default function page() {
         <>
             <BackButton />
 
+            <div className="py-5"></div>
+
             <section
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-delay={aosDelay}
                 data-aos-duration={aosDuration}
+                className="overflow-hidden"
                 id="icai"
             >
                 <Icai />
