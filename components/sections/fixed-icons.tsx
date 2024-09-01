@@ -8,7 +8,7 @@ import { TelegramIcon } from "../footer/telegram-icon";
 export function FixedIcons() {
     return (
         <>
-            <div className="fixed z-20 -left-[183px] md:-left-[215px] top-[50vh] -rotate-90 flex gap-1">
+            <div className="fixed z-20 -left-[177px] md:-left-[210px] top-[50vh] -rotate-90 flex gap-1">
                 <a
                     target="_blank"
                     href={"https://www.linkedin.com/in/cacfaneel0409"}
