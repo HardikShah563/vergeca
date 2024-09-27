@@ -166,7 +166,7 @@ export function Pricing() {
                                 <Image
                                     src={pricingImg}
                                     alt={"pricing"}
-                                    className="w-fit mx-auto rounded-md"
+                                    className="w-full sm:w-[400px] mx-auto rounded-md"
                                 />
                             </Card>
                         </div>
