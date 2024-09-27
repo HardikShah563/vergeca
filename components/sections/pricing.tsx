@@ -80,8 +80,20 @@ export function Pricing() {
                             <h1 className="heading">
                                 Subscription Plans
                             </h1>
-                            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                            {/* <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                 Choose the plan that fits your needs.
+                            </p> */}
+                            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                Download the App and Register for free.
+                                <br />
+                                Get 2 days of free access to any 1 subject.
+                                <br />
+                                Extend further for 7 days by providing Institute Registration Image on Whatsapp.
+                                <br />
+                                <br />
+                                <h1 className="text-2xl font-bold mb-5 text-foreground">
+                                    Further choose the plan that fits your needs
+                                </h1>
                             </p>
                         </div>
 
@@ -132,15 +144,7 @@ export function Pricing() {
                                 </ul>
                             </Card>
 
-                            <Card className="p-5">
-                                <Image
-                                    src={pricingImg}
-                                    alt={"pricing"}
-                                    className="w-full mx-auto rounded-md"
-                                />
-                            </Card>
-
-                            <Card className="p-5 md:px-10">
+                            {/* <Card className="p-5 md:px-10">
                                 <h1 className="text-2xl font-bold mb-5">Free Subscription</h1>
                                 <ul className="list-disc text-left">
                                     <li>
@@ -153,6 +157,17 @@ export function Pricing() {
                                         Extend further for 7 days by providing Institute Registration Image on Whatsapp.
                                     </li>
                                 </ul>
+                            </Card> */}
+
+                            <Card className="p-5">
+                                <h1 className="text-2xl font-bold mb-5">
+                                    Initiative from 24.9.2024
+                                </h1>
+                                <Image
+                                    src={pricingImg}
+                                    alt={"pricing"}
+                                    className="w-fit mx-auto rounded-md"
+                                />
                             </Card>
                         </div>
                     </div>

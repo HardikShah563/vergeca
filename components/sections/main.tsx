@@ -120,7 +120,7 @@ function Carousel3() {
                     <Image
                         src={pricing}
                         alt={"pricing"}
-                        className="md:w-[450px] mx-auto rounded-lg"
+                        className="md:w-[400px] mx-auto rounded-lg"
                         fetchPriority="high"
                     />
                 </div>
@@ -225,6 +225,10 @@ export function Main() {
 
                     <CarouselItem key={4} className="flex items-center">
                         <Carousel4 />
+                    </CarouselItem>
+
+                    <CarouselItem key={5} className="flex items-center">
+                        <Carousel5 />
                     </CarouselItem>
                 </CarouselContent>
 
