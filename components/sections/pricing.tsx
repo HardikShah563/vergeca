@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pricing } from "@/lib/data";
 
+// importing images
+import pricingImg from "@/public/images/pricing.png";
+
 // importing icons
 import { Check } from "lucide-react";
 
@@ -127,6 +130,14 @@ export function Pricing() {
                                         </Button>
                                     </li>
                                 </ul>
+                            </Card>
+
+                            <Card className="p-5">
+                                <Image
+                                    src={pricingImg}
+                                    alt={"pricing"}
+                                    className="w-full mx-auto rounded-md"
+                                />
                             </Card>
 
                             <Card className="p-5 md:px-10">

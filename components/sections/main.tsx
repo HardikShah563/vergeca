@@ -6,7 +6,6 @@ import Autoplay from "embla-carousel-autoplay";
 
 // importing from next
 import Image from "next/image";
-import Link from "next/link";
 
 // importing shadcn component
 import { Button } from "@/components/ui/button";
@@ -25,6 +24,7 @@ import { Availability } from "./availability";
 import mainBanner from "@/public/images/mainBanner.svg";
 import mainBanner2 from "@/public/images/mainBanner2.png";
 import mainBanner3 from "@/public/images/mainBanner3.png";
+import pricing from "@/public/images/pricing.png";
 import { MoveLeft, MoveRight } from "lucide-react";
 import webapp from "@/public/images/webapp.png";
 
@@ -100,8 +100,36 @@ function Carousel2() {
     );
 }
 
-
 function Carousel3() {
+    return (
+        <>
+            <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full p-5">
+                <div className="flex flex-wrap md:flex-nowrap justify-evenly gap-10 h-full items-center w-[80%] mx-auto py-5 md:py-0">
+                    <div>
+                        <h1 className="heading md:text-6xl lg:text-7xl text-center md:text-left uppercase">
+                            Verge CA
+                        </h1>
+
+                        <h1 className="sub-heading text-center md:text-left hidden md:block">
+                            Revision App for CA Inter & CA Final Students
+                        </h1>
+
+                        <Availability />
+                    </div>
+
+                    <Image
+                        src={pricing}
+                        alt={"pricing"}
+                        className="md:w-[450px] mx-auto rounded-lg"
+                        fetchPriority="high"
+                    />
+                </div>
+            </Card>
+        </>
+    );
+}
+
+function Carousel4() {
     return (
         <>
             <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full p-5">
@@ -130,7 +158,7 @@ function Carousel3() {
     );
 }
 
-function Carousel4() {
+function Carousel5() {
     return (
         <>
             <Card className="h-[80vh] md:h-[60vh] items-center bg-muted m-1 w-full">
